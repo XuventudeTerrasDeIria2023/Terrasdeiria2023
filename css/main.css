@@ -8,11 +8,13 @@
   */
 /*
 
-dodro color: #a2a240
+dodro color: #a2a240 #8e8e35
 padron color: #e5b700
 rois color: #007a53;
 
-
+marron: rgb(162, 88, 44)
+#a2582c;
+marron obradoiro 2021: #570e0e rgb(87, 14, 14)
 
 */
 
@@ -454,23 +456,31 @@ h3 {
 }
 
 #logos_inicio {
-	display: flex;
-	align-content: space-around;
-	align-items: flex-start;
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
 	justify-content: center;
 	border-bottom: 2px solid #ccc;
 }
 
-#logos_inicio img {}
+#logos_inicio img {
+	padding: 0px;
+}
+
+
 
 #logo_terras {
-	width: 20%;
+	width: 15%;
+}
+
+img#logo_obradoiro {
+	width: 80%;
 }
 
 #header .navbar-brand img {
 	padding: 0px;
 	margin: 0px;
-	/*	width: 20%;*/
+	width: 60%;
 }
 
 #header .navbar-brand h1 {
@@ -869,6 +879,14 @@ nav navbar-nav navbar-right ul.sub-menu {
 	/*	position: relative;*/
 	border-bottom: 2px solid #ccc;
 	padding-bottom: 1em;
+	width: 90%;
+
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
 }
 
 
@@ -984,8 +1002,8 @@ nav navbar-nav navbar-right ul.sub-menu {
 #home-slider .main-slider {
 	/*	position: relative;*/
 	padding: em;
-	height: 60vw;
-	width: 50%;
+	height: auto;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -997,8 +1015,8 @@ nav navbar-nav navbar-right ul.sub-menu {
 /* Susi animacion */
 #home-slider .slider-mapa-rois {
 	position: relative;
-	left: 5%;
-	top: 0%;
+	left: 3%;
+	top: 1%;
 }
 
 .animate-in .slider-mapa-rois {
@@ -1008,8 +1026,8 @@ nav navbar-nav navbar-right ul.sub-menu {
 
 #home-slider .slider-mapa-dodro {
 	position: relative;
-	left: 10%;
-	bottom: 10%;
+	left: 3%;
+	top: 1%;
 }
 
 .animate-in .slider-mapa-dodro {
@@ -1019,8 +1037,8 @@ nav navbar-nav navbar-right ul.sub-menu {
 
 #home-slider .slider-mapa-padron {
 	position: relative;
-	left: 5%;
-	bottom: 30%;
+	left: 6%;
+	top: 1%;
 }
 
 .animate-in .slider-mapa-padron {
@@ -1131,6 +1149,18 @@ nav navbar-nav navbar-right ul.sub-menu {
 	margin-left: -24px;
 	top: 50%;
 	margin-top: -24px;
+}
+
+#obradoiros-anteriores {
+	width: 80%;
+	margin: 0 auto;
+
+	border: 1px solid blue;
+}
+
+#obradoiros-anteriores img {
+	width: auto;
+	margin: 0px;
 }
 
 #action {
