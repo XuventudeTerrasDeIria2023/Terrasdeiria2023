@@ -1154,8 +1154,6 @@ nav navbar-nav navbar-right ul.sub-menu {
 #obradoiros-anteriores {
 	width: 80%;
 	margin: 0 auto;
-
-	border: 1px solid blue;
 }
 
 #obradoiros-anteriores img {
@@ -1548,10 +1546,13 @@ h3.top-zero {
 	padding-bottom: 50px;
 }
 
+/*
 .choose {
 	padding-top: 30px;
 }
+*/
 
+/*
 #company-information.choose .padding-top {
 	padding-top: 50px;
 }
@@ -1560,6 +1561,7 @@ h3.top-zero {
 	margin-bottom: 25px;
 	margin-top: 0;
 }
+*/
 
 /***********************
 listado
@@ -1587,9 +1589,11 @@ ul.elements li > i {
 	margin-right: 10px;
 }
 
+/*
 #company-information h1.margin-bottom {
 	margin-bottom: 26px;
 }
+*/
 
 .fa-check {
 	font-size: .7em;
