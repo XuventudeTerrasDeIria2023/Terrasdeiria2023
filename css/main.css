@@ -136,7 +136,7 @@ html {
 
 
 a {
-	color: #a2582c;
+	color: #570e0e;
 	font-family: "Roboto Slab", serif;
 }
 
@@ -199,8 +199,8 @@ h3 {
 
 .btn-common {
 	font-size: 1em;
-	color: #a2582c;
-	border: 1px solid #a2582c;
+	color: #570e0e;
+	border: 1px solid #570e0e;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	padding: 10px 25px;
@@ -289,7 +289,6 @@ h3 {
 	height: auto;
 	padding: .2em 1em .2em 1em;
 	border-bottom: 1px solid #ccc;
-	border: 1px solid blue;
 }
 
 #header .container {
@@ -543,12 +542,12 @@ img#logo_obradoiro {
 .navbar-inverse .navbar-nav > .open > a {
 	background-color: inherit;
 	border: 0;
-	color: #a2582c;
+	color: #570e0e;
 
 }
 
 #header .navbar-inverse .navbar-nav li a:hover {
-	color: #a2582c;
+	color: #570e0e;
 	font-weight: bold;
 
 }
@@ -577,7 +576,7 @@ nav navbar-nav navbar-right ul.sub-menu {
 }
 
 #header .navbar-nav li ul.sub-menu li .active {
-	background: #a2582c;
+	background: #570e0e;
 	color: #fff;
 	position: relative;
 }
@@ -586,7 +585,7 @@ nav navbar-nav navbar-right ul.sub-menu {
 	position: absolute;
 	font-size: 56px;
 	top: -13px;
-	color: #a2582c;
+	color: #570e0e;
 }
 
 #header .navbar-nav li ul.sub-menu li .active .fa-angle-right {
@@ -599,7 +598,7 @@ nav navbar-nav navbar-right ul.sub-menu {
 
 #header .navbar-nav li ul.sub-menu li a:hover,
 #header .navbar-nav li ul.sub-menu li a:focus {
-	background: #a2582c;
+	background: #570e0e;
 	color: #fff;
 }
 
@@ -698,7 +697,7 @@ nav navbar-nav navbar-right ul.sub-menu {
 	/*	padding: inherit;*/
 	text-align: center;
 	text-decoration: none;
-	color: #a2582c;
+	color: #570e0e;
 	/*	font-size: .7em;*/
 	/*	font-family: "Roboto Slab", serif;*/
 }
@@ -743,17 +742,29 @@ nav navbar-nav navbar-right ul.sub-menu {
 	padding: inherit;
 	text-align: left;
 	text-decoration: none;
-	color: #a2582c;
+	color: #570e0e;
 	font-size: .7em;
 	font-family: "Roboto Slab", serif;
 }
 
+/*
 #footer a:hover {
 	color: #666;
 	padding: inherit;
 	border-bottom: 1px dashed #888;
 }
+*/
 
+#footer a:hover {
+	color: #888;
+	font-weight: normal;
+	border-bottom: 1px dashed rgb(87, 14, 14);
+	padding-bottom: 0.1em;
+}
+
+#footer a:hover:visited {
+	color: #444;
+}
 
 #footer .bottom-separator {
 	margin-bottom: 60px;
@@ -775,7 +786,7 @@ nav navbar-nav navbar-right ul.sub-menu {
 }
 
 .bottom .media-body h3 a {
-	color: #a2582c;
+	color: #570e0e;
 }
 
 .testimonial .media {
@@ -805,7 +816,7 @@ nav navbar-nav navbar-right ul.sub-menu {
 	top: 8px;
 	content: '"';
 	font-size: 40px;
-	color: #a2582c;
+	color: #570e0e;
 	font-family: 'Noto Sans', sans-serif;
 	transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
@@ -819,7 +830,7 @@ nav navbar-nav navbar-right ul.sub-menu {
 	bottom: 14px;
 	content: '"';
 	font-size: 40px;
-	color: #a2582c;
+	color: #570e0e;
 	font-family: 'Noto Sans', sans-serif;
 	line-height: 0;
 }
@@ -858,7 +869,7 @@ nav navbar-nav navbar-right ul.sub-menu {
 	text-transform: uppercase;
 	border-radius: 3px;
 	margin-top: 5px;
-	border-bottom: 3px solid #a2582c;
+	border-bottom: 3px solid #570e0e;
 	box-shadow: none;
 	padding: 10px;
 }
@@ -1298,24 +1309,24 @@ nav navbar-nav navbar-right ul.sub-menu {
 }
 
 .migas {
-	width: 80%;
+	width: 100%;
 	padding: 0px;
-	margin: 1em;
+	padding: .5em .5em .5em .5em;
+	border-bottom: .5px solid rgba(87, 14, 14, .5);
 }
 
 
 .migas a {
-	color: #444;
+	color: rgb(87, 14, 14);
 	font-weight: normal;
 	font-style: normal;
-	font-family: "Roboto Slab",
-		serif;
+	font-family: "Roboto Slab", serif;
 }
 
 .migas a:hover {
 	color: #888;
 	font-weight: normal;
-	border-bottom: 1px dashed #888;
+	border-bottom: 1px dashed rgb(87, 14, 14);
 	padding-bottom: 0.1em;
 }
 
@@ -1614,6 +1625,7 @@ ul.elements li > i {
 
 .portfolio-thumb img {
 	width: 100%;
+	border: 1px solid blue;
 }
 
 
@@ -1624,8 +1636,8 @@ ul.elements li > i {
 }
 
 #portfolio .row {
-	margin-left: -10px;
-	margin-right: -10px;
+	margin: 0px;
+
 }
 
 .portfolio-view {
@@ -1633,7 +1645,8 @@ ul.elements li > i {
 	position: absolute;
 	top: 0;
 	height: 100%;
-	background: rgba(112, 35, 64, 0.9);
+	/*	background: rgba(112, 35, 64, 0.9);*/
+	background: #570e0e;
 	width: 100%;
 	text-align: center;
 }
@@ -1684,8 +1697,9 @@ ul.elements li > i {
 }
 
 .portfolio-filter {
-	margin: 80px 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid blue;
 }
 
 .portfolio-filter li {
@@ -1695,7 +1709,7 @@ ul.elements li > i {
 
 .portfolio-filter li a {
 	border-radius: 0;
-	color: #686868;
+	color: #666;
 	font-size: 18px;
 	font-weight: 300;
 	padding: 0 25px;
