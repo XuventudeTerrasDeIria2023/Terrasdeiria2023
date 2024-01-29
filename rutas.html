@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Xuventude Terras de Iria</title>
+	<title>Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois)</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -26,13 +26,17 @@
 
 	<link rel="shortcut icon" href="favicon-32x32.png">
 
-	<style>
-		#map {
-
-			border: thin solid #ccc;
-		}
-
-	</style>
+	<!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+	<!--
+	<link rel="shortcut icon" href="images/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+-->
 </head>
 <!--/head-->
 
@@ -104,193 +108,180 @@
 	</header>
 	<!--/#header-->
 
-	<section>
-		<div class="migas">Rois <i class="fa fa-chevron-right "></i> <a href="´#"></a>Ruta1</div>
 
+	<section id="page-breadcrumb">
+		<!-- #page-breadcrumb-->
+		<div class="migas"><a href="#">Rois</a> <i class="fa fa-chevron-right "> </i> <a href="#">Migas 1</a></div>
 	</section>
 	<!--/#page-breadcrumb-->
-
-	<section id="company-information" class="choose">
+	<!-- contido das rutas #portfolio -->
+	<section id="portfolio">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0ms">
+			<!--			<div class="row">-->
+			<ul class="portfolio-filter text-center">
+				<li><a class="btn btn-default active" href="portfolio-details.html" data-filter="*">Nome ruta 1</a></li>
+				<li><a class="btn btn-default" href="#" data-filter=".branded">Nome ruta 2</a></li>
+				<li><a class="btn btn-default" href="#" data-filter=".design">Nome ruta 3</a></li>
+				<li><a class="btn btn-default" href="#" data-filter=".folio">Nome ruta 4</a></li>
+				<li><a class="btn btn-default" href="#" data-filter=".logos">Nome ruta 5</a></li>
+				<li><a class="btn btn-default" href="#" data-filter=".mobile">Nome ruta 6</a></li>
 
-					<div id="map">
+			</ul>
+			<!--/#portfolio-filter-->
 
-						<iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-8.691770732402803%2C42.760182167066695%2C-8.689716160297396%2C42.76133615607916&amp;layer=mapnik" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/#map=19/42.76076/-8.69074">Ver el mapa más grande</a></small>
-					</div>
-
-
-
-				</div>
-				<div class="col-sm-6 padding-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0ms">
-					<h2>Lorem Ipsum</h2>
-					<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.<br> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-					<ul class="elements">
-						<li class="wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms"><i class="fa fa-angle-right"></i> Lorem Ipsum es simplemente el texto de relleno </li>
-						<li class="wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms"><i class="fa fa-angle-right"></i> Lorem Ipsum es simplemente el texto de relleno </li>
-						<li class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms"><i class="fa fa-angle-right"></i> Lorem Ipsum es simplemente el texto de relleno </li>
-						<li class="wow fadeInUp" data-wow-duration="600ms" data-wow-delay="400ms"><i class="fa fa-angle-right"></i> Lorem Ipsum es simplemente el texto de relleno </li>
-						<li class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms"><i class="fa fa-angle-right"></i> Lorem Ipsum es simplemente el texto de relleno </li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/#company-information-->
-
-	<section id="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-					<div class="single-service">
-						<div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-							<img src="images/home/icon1.png" alt="">
-						</div>
-						<h2>Lorem Ipsum es simplemente el texto de relleno </h2>
-						<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-					</div>
-				</div>
-				<div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-					<div class="single-service">
-						<div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-							<img src="images/home/icon2.png" alt="">
-						</div>
-						<h2>Lorem Ipsum es simplemente </h2>
-						<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-					</div>
-				</div>
-				<div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-					<div class="single-service">
-						<div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-							<img src="images/home/icon3.png" alt="">
-						</div>
-						<h2>Lorem Ipsum es simplemente </h2>
-						<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-	<!--/#services-->
-
-	<section id="action" class="responsive">
-		<div class="vertical-center">
-			<div class="container">
-				<div class="row">
-					<div class="action take-tour">
-						<div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-							<h1 class="title">Lorem Ipsum es simplemente el texto</h1>
-							<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-						</div>
-						<div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-							<div class="tour-button">
-								<a href="#" class="btn btn-common">Ver mapa</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/#action-->
-
-	<section id="recent-projects" class="recent-projects">
-		<div class="container">
-			<div class="row">
-				<h1 class="title text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">Lorem Ipsum </h1>
-				<p class="text-center padding-bottom wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms"> hola mundo
-				</p>
-				<!-- Inicio un apartado-->
-				<div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+			<div class="portfolio-items">
+				<div class="col-xs-6 col-sm-4 col-md-3 portfolio-item">
 					<div class="portfolio-wrapper">
-
 						<div class="portfolio-single">
 							<div class="portfolio-thumb">
-								<img src="images/home/icon2.png" class="img-responsive" alt="">
+								<img src="images/1.jpg" class="img-responsive" alt="">
 							</div>
 							<div class="portfolio-view">
 								<ul class="nav nav-pills">
-									<li><a src="images/home/icon2.png" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+									<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
+									<li><a href="images/portfolio/1.jpg"><i class="fa fa-eye"></i></a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="portfolio-info">
-							<h2>Lorem Ipsum </h2>
+						<div class="portfolio-info ">
+							<h2>Lorem Ipsum</h2>
 						</div>
 					</div>
 				</div>
-				<!-- Fin un apartado-->
-
-				<!-- Inicio un apartado-->
-				<div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+				<div class="col-xs-6 col-sm-4 col-md-3 portfolio-item">
 					<div class="portfolio-wrapper">
-
 						<div class="portfolio-single">
 							<div class="portfolio-thumb">
-								<img src="images/home/icon2.png" class="img-responsive" alt="">
+								<img src="images/1.jpg" class="img-responsive" alt="">
 							</div>
 							<div class="portfolio-view">
 								<ul class="nav nav-pills">
-									<li><a src="images/home/icon2.png" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+									<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
+									<li><a href="images/portfolio/1.jpg"><i class="fa fa-eye"></i></a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="portfolio-info">
-							<h2>Lorem Ipsum </h2>
+						<div class="portfolio-info ">
+							<h2>Lorem Ipsum 2</h2>
 						</div>
 					</div>
 				</div>
-				<!-- Fin un apartado-->
-				<!-- Inicio un apartado-->
-				<div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+				<div class="col-xs-6 col-sm-4 col-md-3 portfolio-item design logos">
 					<div class="portfolio-wrapper">
-
 						<div class="portfolio-single">
 							<div class="portfolio-thumb">
-								<img src="images/home/icon2.png" class="img-responsive" alt="">
+								<img src="images/1.jpg" class="img-responsive" alt="">
 							</div>
 							<div class="portfolio-view">
 								<ul class="nav nav-pills">
-									<li><a src="images/home/icon2.png" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+									<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
+									<li><a href="images/portfolio/1.jpg"><i class="fa fa-eye"></i></a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="portfolio-info">
-							<h2>Lorem Ipsum </h2>
+						<div class="portfolio-info ">
+							<h2>Lorem Ipsum 3</h2>
 						</div>
 					</div>
 				</div>
-				<!-- Fin un apartado-->
-				<!-- Inicio un apartado-->
-				<div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+				<div class="col-xs-6 col-sm-4 col-md-3 portfolio-item design logos">
 					<div class="portfolio-wrapper">
-
 						<div class="portfolio-single">
 							<div class="portfolio-thumb">
-								<img src="images/home/icon2.png" class="img-responsive" alt="">
+								<img src="images/1.jpg" class="img-responsive" alt="">
 							</div>
 							<div class="portfolio-view">
 								<ul class="nav nav-pills">
-									<li><a src="images/home/icon2.png" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+									<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
+									<li><a href="images/portfolio/1.jpg"><i class="fa fa-eye"></i></a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="portfolio-info">
-							<h2>Lorem Ipsum </h2>
+						<div class="portfolio-info ">
+							<h2>Lorem Ipsum 4</h2>
 						</div>
 					</div>
 				</div>
-				<!-- Fin un apartado-->
+				<div class="col-xs-6 col-sm-4 col-md-3 portfolio-item branded mobile">
+					<div class="portfolio-wrapper">
+						<div class="portfolio-single">
+							<div class="portfolio-thumb">
+								<img src="images/1.jpg" class="img-responsive" alt="">
+							</div>
+							<div class="portfolio-view">
+								<ul class="nav nav-pills">
+									<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
+									<li><a href="images/portfolio/1.jpg"><i class="fa fa-eye"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="portfolio-info ">
+							<h2>Lorem Ipsum 5</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 portfolio-item branded mockup">
+					<div class="portfolio-wrapper">
+						<div class="portfolio-single">
+							<div class="portfolio-thumb">
+								<img src="images/1.jpg" class="img-responsive" alt="">
+							</div>
+							<div class="portfolio-view">
+								<ul class="nav nav-pills">
+									<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
+									<li><a href="images/portfolio/1.jpg"><i class="fa fa-eye"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="portfolio-info ">
+							<h2>Lorem Ipsum 6</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 portfolio-item branded folio">
+					<div class="portfolio-wrapper">
+						<div class="portfolio-single">
+							<div class="portfolio-thumb">
+								<img src="images/1.jpg" class="img-responsive" alt="">
+							</div>
+							<div class="portfolio-view">
+								<ul class="nav nav-pills">
+									<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
+									<li><a href="images/portfolio/1.jpg"><i class="fa fa-eye"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="portfolio-info ">
+							<h2>Lorem Ipsum 7</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-3 portfolio-item design logos">
+					<div class="portfolio-wrapper">
+						<div class="portfolio-single">
+							<div class="portfolio-thumb">
+								<img src="images/1.jpg" class="img-responsive" alt="">
+							</div>
+							<div class="portfolio-view">
+								<ul class="nav nav-pills">
+									<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
+									<li><a href="images/portfolio/1.jpg"><i class="fa fa-eye"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="portfolio-info ">
+							<h2>Lorem Ipsum 8</h2>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<!-- </div> -->
 	</section>
-	<!--/#recent-projects-->
+	<!--/#portfolio-->
 
 
-
-	<!-- INICIO footer-->
+	<!-- #footer-->
 	<footer id="footer">
 		<img src="images/Logos.png" alt="Logotipos Obradoiros de Emprego">
 		<div>
@@ -306,10 +297,12 @@
 			<a data-title="Link a Concello de Rois" href="https://www.rois.gal" target="_blank"><img src="images/concello_rois/escudo_Rois.png" alt="Escudo do Concello de Dodro"></a>
 		</div>
 	</footer>
-	<!-- FIN footer-->
+	<!-- /#footer-->
+
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
 	<script type="text/javascript" src="js/lightbox.min.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
