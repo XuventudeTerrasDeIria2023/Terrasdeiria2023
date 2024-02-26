@@ -3953,7 +3953,7 @@ fieldset[disabled] .btn-default:hover {
 .btn-primary:hover,
 .open > .dropdown-toggle.btn-primary {
 	color: #fff;
-	background-color: #286090;
+	background-color: #570e0e;
 	border-color: #204d74
 }
 
@@ -3981,12 +3981,12 @@ fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-	background-color: #337ab7;
+	background-color: #570e0e;
 	border-color: #2e6da4
 }
 
 .btn-primary .badge {
-	color: #337ab7;
+	color: #570e0e;
 	background-color: #fff
 }
 
@@ -4054,7 +4054,7 @@ fieldset[disabled] .btn-success:hover {
 .open > .dropdown-toggle.btn-info {
 	color: #fff;
 	background-color: #31b0d5;
-	border-color: #269abc
+	border-color: #570e0e;
 }
 
 .btn-info.active,
@@ -4339,7 +4339,7 @@ tbody.collapse.in {
 	min-width: 160px;
 	padding: 5px 0;
 	margin: 2px 0 0;
-	font-size: 14px;
+	font-size: 1em;
 	text-align: left;
 	list-style: none;
 	background-color: #fff;
@@ -4376,7 +4376,7 @@ tbody.collapse.in {
 
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover {
-	color: #262626;
+	color: #333;
 	text-decoration: none;
 	background-color: #f5f5f5
 }
@@ -4426,7 +4426,7 @@ tbody.collapse.in {
 .dropdown-header {
 	display: block;
 	padding: 3px 20px;
-	font-size: 12px;
+	font-size: 1em;
 	line-height: 1.42857143;
 	color: #777;
 	white-space: nowrap
@@ -6114,7 +6114,7 @@ a.badge:hover {
 a.thumbnail.active,
 a.thumbnail:focus,
 a.thumbnail:hover {
-	border-color: #337ab7
+	border-color: #570e0e
 }
 
 .thumbnail .caption {

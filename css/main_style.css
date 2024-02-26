@@ -15,8 +15,8 @@ body {
 	background: #fff;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 14px;
-	line-height: 22px;
+	font-size: 16px;
+	line-height: 24px;
 	color: #000;
 }
 
@@ -26,7 +26,7 @@ html {
 
 
 a {
-	color: #C03035;
+	color: #570e0e;
 }
 
 a:hover {
@@ -59,7 +59,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 h1 {
@@ -67,12 +67,12 @@ h1 {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 1.2em;
 	color: #686868;
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 1em;
 }
 
 .overflow {
@@ -192,7 +192,7 @@ h3 {
 }
 
 .search i {
-	color: #00aeef;
+	color: #570e0e;
 	cursor: pointer;
 	position: absolute;
 	right: 10px;
@@ -216,7 +216,7 @@ h3 {
 	color: #818285;
 	font-weight: 300;
 	outline: none;
-	border: 1px solid #00aeef;
+	border: 1px solid #570e0e;
 	margin-top: 20px;
 	border-radius: 4px;
 }
@@ -302,11 +302,11 @@ h3 {
 .navbar-inverse .navbar-nav > .open > a {
 	background-color: inherit;
 	border: 0;
-	color: #00aeef;
+	color: #570e0e;
 }
 
 #header .navbar-inverse .navbar-nav li a:hover {
-	color: #00aeef;
+	color: #570e0e;
 }
 
 #header [data-title]:after {
@@ -344,6 +344,95 @@ h3 {
 	position: relative;
 }
 
+/* nav dodro padron rois */
+
+.nav-web {
+	width: 100%;
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.nav-web div {
+	display: inline-flex;
+	width: 7em;
+	padding: 0px;
+	margin: 0px;
+}
+
+.nav-web a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: .7em;
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: .1em;
+}
+
+.nav-rois:hover,
+.nav-padron:hover,
+.nav-dodro:hover {
+	color: #fff;
+
+	-moz-box-shadow: 4px 4px 8px #666;
+	/* Firefox 3.5 - 3.6 */
+	-webkit-box-shadow: 4px 4px 8px #666;
+	/* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	box-shadow: 4px 4px 8px #666;
+	/* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.nav-web .inactive a {
+	opacity: 0.2;
+}
+
+.inactive .nav-rois,
+.inactive.nav-padron,
+.inactive.nav-dodro {
+	opacity: 0.2;
+}
+
+.nav-web .active a,
+.nav-web .active a:visited {
+	color: #fff;
+	opacity: 1;
+}
+
+.nav-rois,
+.nav-padron,
+.nav-dodro {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding: 0.7em;
+	margin: 0px;
+	text-decoration: none;
+	-moz-box-shadow: 4px 4px 8px #ccc;
+	/* Firefox 3.5 - 3.6 */
+	-webkit-box-shadow: 4px 4px 8px #ccc;
+	/* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	box-shadow: 4px 4px 8px #ccc;
+	/* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.nav-dodro {
+	background-color: #a2a240;
+}
+
+.nav-padron {
+	/*	background-color: #ffcc00;
+	*/
+	background: #e5b700
+}
+
+.nav-rois {
+	background-color: #007a53;
+}
+
 /*  Dropdown menu*/
 
 ul.sub-menu {
@@ -354,15 +443,15 @@ ul.sub-menu {
 }
 
 #header .navbar-nav li ul.sub-menu li a {
-	color: #818285;
+	color: #262626;
 	padding: 5px 0;
-	font-size: 13px;
+	font-size: 1em;
 	display: block;
 	text-transform: capitalize;
 }
 
 #header .navbar-nav li ul.sub-menu li .active {
-	background: #00aeef;
+	background: #570e0e;
 	color: #fff;
 	position: relative;
 }
@@ -371,7 +460,7 @@ ul.sub-menu {
 	position: absolute;
 	font-size: 56px;
 	top: -13px;
-	color: #0884d5;
+	color: #570e0e;
 }
 
 #header .navbar-nav li ul.sub-menu li .active .fa-angle-right {
@@ -384,12 +473,12 @@ ul.sub-menu {
 
 #header .navbar-nav li ul.sub-menu li a:hover,
 #header .navbar-nav li ul.sub-menu li a:focus {
-	background: #00aeef;
+	background: #570e0e;
 	color: #fff;
 }
 
 .fa-angle-down {
-	padding-left: 5px;
+	padding-left: .5em;
 }
 
 .scaleIn {
@@ -595,7 +684,7 @@ ul.sub-menu {
 	text-transform: uppercase;
 	border-radius: 3px;
 	margin-top: 5px;
-	border-bottom: 3px solid #2f9697;
+	border-bottom: 3px solid #570e0e;
 	box-shadow: none;
 	padding: 10px;
 }
@@ -692,7 +781,7 @@ ul.sub-menu {
 	font-size: 48px;
 	height: 48px;
 	line-height: 48px;
-	color: #00aeef;
+	color: #570e0e;
 	position: absolute;
 	left: 50%;
 	margin-left: -24px;
@@ -987,7 +1076,7 @@ ul.sub-menu {
 
 .count h1 {
 	font-size: 60px;
-	color: #00aeef;
+	color: #570e0e;
 }
 
 .count h3 {
@@ -1031,7 +1120,7 @@ h3.top-zero {
 }
 
 .progress-bar.progress-bar-primary {
-	background: #00aeef;
+	background: #570e0e;
 }
 
 
@@ -2045,7 +2134,7 @@ span.stButton_gradient,
 }
 
 #map-section address a:hover {
-	color: #00AEEF
+	color: #570e0e
 }
 
 #contact-form #message {
@@ -2719,7 +2808,7 @@ span.stButton_gradient,
 	background-color: transparent;
 	height: 52px;
 	color: #fff;
-	border: 2px solid #00aeef;
+	border: 2px solid #570e0e;
 }
 
 #newsletter {

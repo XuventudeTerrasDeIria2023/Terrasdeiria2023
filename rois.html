@@ -18,7 +18,7 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/lightbox.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+	<link href="css/main_style.css" rel="stylesheet">
 	<link href="css/concellos.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 
@@ -28,16 +28,26 @@
 
 <body>
 	<header id="header">
-		<a class="navbar-brand" href="index.html" data-title="Ir a Inicio">
-			<img src="images/Logo_Xuve_Terras_2023.png" alt="logo Xuventude Terrasd e Iria 2023" data-title="Ir a Inicio">
-		</a>
-		<div class="container">
-			<div class="navbar navbar-inverse">
+		<div class="navbar navbar-inverse" role="banner"><a class="navbar-brand" href="index.html">
+				<img id="logo_terras" src="images/Logo_Xuve_Terras_2023.png" alt="logo Xuventude Terras de Iria 2023" data-title="Xuventude Terras de Iria 2023 (Dodro, Padrón, Rois)">
+			</a>
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+				<!--
 				<nav class="nav-web">
 					<div class="inactive"><a class="nav-dodro" href="#">Dodro</a></div>
 					<div class="inactive"><a class="nav-padron" href="#">Padrón</a> </div>
 					<div><a class="nav-rois" href="rois.html">Rois</a> </div>
-				</nav>
+				</nav>-->
 
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
