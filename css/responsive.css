@@ -15,7 +15,7 @@
 		box-shadow: none;
 		display: none;
 		z-index: 999;
-		/*		border: 1px solid #a2582c;*/
+		border: 1px solid #00aeef;
 	}
 
 	#header .navbar-nav li ul.sub-menu li a {
@@ -82,15 +82,10 @@
 	}
 
 	#home-slider {
-		margin-top: 0px;
-		width: 100vw;
-		display: block;
+		margin-top: 30px;
 	}
 
 	#home-slider .main-slider {
-		margin-top: 0px;
-		width: 100vw;
-		display: block;
 		height: auto;
 	}
 
@@ -103,37 +98,12 @@
 		margin-top: 0;
 	}
 
-	#home-slider .slider-catedral {
-		width: 50%;
+	#home-slider .slider-mapa-rois,
+	#home-slider .slider-mapa-padron,
+	#home-slider .slider-mapa-dodro {
+		width: 60%;
 	}
 
-	#home-slider .slider-apostolcabalo {
-		width: 50%;
-		right: 90px;
-		bottom: -20px;
-	}
-
-	#home-slider .slider-botafumeiro {
-		right: 0;
-		bottom: 0;
-		width: 20%;
-	}
-
-	#home-slider .slider-folla1,
-	#home-slider .slider-folla2,
-	#home-slider .slider-folla3 {
-		right: 0;
-		bottom: 0;
-		width: 15%;
-	}
-
-	#home-slider .slider-birds2 {
-		right: 0;
-		bottom: 90px;
-		width: 80px;
-	}
-
-	#services {}
 
 	/*Pricing Table*/
 	.single-price {
@@ -199,7 +169,7 @@
 
 
 /* xs */
-@media only screen and (max-width : 640px) {
+@media only screen and (max-width : 768px) {
 
 	h1 {
 		font-size: 22px;
@@ -224,47 +194,34 @@
 
 	#header .navbar-inverse .navbar-toggle,
 	#header .navbar-inverse .navbar-toggle:focus {
-		border-color: #a2582c;
+		border-color: #00aeef;
 		margin-top: 15px;
 		margin-right: 5px;
 		outline: none;
 	}
 
 	.navbar-header .navbar-toggle .icon-bar {
-		background-color: #a2582c;
+		background-color: #00aeef;
 	}
 
 	#header .navbar-inverse .navbar-toggle:hover {
-		background: #a2582c;
+		background: #00aeef;
 	}
 
 	#header .navbar-inverse .navbar-toggle:hover .icon-bar {
 		background: #fff;
 	}
 
-	#home-slider {
-		margin-top: 0px;
-		width: 100vw;
-		display: block;
-	}
-
-	#home-slider .main-slider {
-		margin-top: 0px;
-		width: 100vw;
-		display: block;
-		height: 100%;
-	}
-
 	.navbar-inverse .navbar-collapse,
 	.navbar-inverse .navbar-form {
-		width: 50%;
 		border-top: 0;
-		display: block;
 	}
 
-
-
-	.navbar.navbar-inverse li {}
+	.navbar.navbar-inverse {
+		margin-top: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 	.social-icons ul li:first-child {
 		padding-left: 0;
@@ -274,12 +231,8 @@
 		top: -40px;
 	}
 
-	.navbar-nav.navbar-right {
-		display: block;
-	}
-
 	#header .navbar-nav.navbar-right li > a > i {
-		display: block;
+		display: inline-block;
 		float: right;
 		padding: 8px 10px 8px 30px
 	}
@@ -290,7 +243,6 @@
 
 	#header .navbar-nav li ul.sub-menu li a {
 		padding: 5px 10px;
-		display: block;
 	}
 
 	#header .navbar-inverse .navbar-nav li.active > a,
@@ -300,16 +252,12 @@
 	}
 
 
-	#header .navbar-inverse .navbar-nav {
-		display: block;
-	}
-
 	#home-slider {
-		margin: 50px 20px;
+		margin: 0 auto;
 	}
 
 	#home-slider .main-slider {
-		height: ;
+		height: auto;
 	}
 
 	#home-slider .slide-text {
@@ -318,33 +266,12 @@
 		text-align: center;
 	}
 
-
-	#home-slider .slider-hill {
-		right: 50%;
-		margin-right: -200px;
+	#home-slider .slider-mapa-rois,
+	#home-slider .slider-mapa-padron,
+	#home-slider .slider-mapa-dodro {
+		width: 50%;
 	}
 
-	#home-slider .slider-house {
-		right: 50%;
-		margin-right: -125px;
-	}
-
-	#home-slider .slider-sun {
-		right: 50%;
-		margin-right: 60px;
-	}
-
-	#home-slider .slider-birds1 {
-		width: 70px;
-		right: 50%;
-		margin-right: 120px;
-	}
-
-	#home-slider .slider-birds2 {
-		width: 70px;
-		right: 50%;
-		margin-right: -200px;
-	}
 
 	/*Pricing Table*/
 	.single-price,

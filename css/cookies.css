@@ -1,0 +1,147 @@
+ 		/* CSS animación e localización dos DIV de cookies */
+ 		@keyframes desaparecer {
+ 			0% {
+ 				bottom: 0px;
+ 			}
+
+ 			80% {
+ 				bottom: 0px;
+ 			}
+
+ 			100% {
+ 				bottom: -100px;
+ 			}
+ 		}
+
+ 		@-webkit-keyframes desaparecer
+
+ 		/* Safari e Chrome */
+ 			{
+ 			0% {
+ 				bottom: 0px;
+ 			}
+
+ 			80% {
+ 				bottom: 0px;
+ 			}
+
+ 			100% {
+ 				bottom: -100px;
+ 			}
+ 		}
+
+ 		@keyframes aparecer {
+ 			0% {
+ 				bottom: -38px;
+ 			}
+
+ 			10% {
+ 				bottom: 0px;
+ 			}
+
+ 			90% {
+ 				bottom: 0px;
+ 			}
+
+ 			100% {
+ 				bottom: -38px;
+ 			}
+ 		}
+
+ 		@-webkit-keyframes aparecer
+
+ 		/* Safari e Chrome */
+ 			{
+ 			0% {
+ 				bottom: -38px;
+ 			}
+
+ 			10% {
+ 				bottom: 0px;
+ 			}
+
+ 			90% {
+ 				bottom: 0px;
+ 			}
+
+ 			100% {
+ 				bottom: -38px;
+ 			}
+ 		}
+
+ 		#cookiesms1:target {
+ 			display: none;
+ 		}
+
+ 		.cookiesms {
+ 			width: 100%;
+ 			height: 2em;
+ 			margin: 0 auto;
+ 			padding-left: 1%;
+ 			padding-top: 0px;
+ 			font-size: 1em;
+ 			clear: both;
+ 			/*			font-weight: strong;*/
+ 			color: #333;
+ 			bottom: 0px;
+ 			position: fixed;
+ 			left: 0px;
+ 			background-color: #FFF;
+ 			opacity: 0.8;
+ 			filter: alpha(opacity=70);
+ 			/* For IE8 and earlier */
+ 			transition: bottom 1s;
+ 			-webkit-transition: bottom 1s;
+ 			/* Safari */
+ 			-webkit-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+ 			-moz-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+ 			box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+ 			z-index: 999999999;
+ 		}
+
+ 		.cookiesms:hover {
+ 			bottom: 0px;
+ 		}
+
+ 		.cookies2 {
+ 			background-color: #FFF;
+ 			display: inline;
+ 			opacity: 0.9;
+ 			filter: alpha(opacity=95);
+ 			position: absolute;
+ 			left: 1%;
+ 			top: -30px;
+ 			font-size: 15px;
+ 			height: auto;
+ 			padding-left: 25px;
+ 			padding-right: 25px;
+ 			-webkit-border-top-right-radius: 15px;
+ 			-webkit-border-top-left-radius: 15px;
+ 			-moz-border-radius-topright: 15px;
+ 			-moz-border-radius-topleft: 15px;
+ 			border-top-right-radius: 15px;
+ 			border-top-left-radius: 15px;
+ 			-webkit-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+ 			-moz-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+ 			box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+ 		}
+
+ 		/* Fin  CSS para cookies */
+ 		/* boton aceptar cookies */
+ 		.cookiesms button {
+ 			padding: 0.2em;
+ 			border-radius: 0.3em;
+ 			box-shadow: 1px 2px 4px 0 #ccc, 1px 4px 8px 0 #ccc;
+ 		}
+
+ 		.cookiesms button:hover {
+ 			border-radius: 0.3em;
+ 			-webkit-transform: scale(1.5) translate(-5%, 0px);
+ 			transform: scale(1.5) translate(-5%, 0px);
+ 			overflow: visible;
+ 			z-index: 9999999;
+ 			background-color: #fff;
+ 			box-shadow: 1px 2px 4px 0 #ccc, 1px 4px 8px 0 #ccc;
+ 		}
+
+ 		/* fin boton aceptar para cookies */
