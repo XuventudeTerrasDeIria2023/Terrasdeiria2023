@@ -26,7 +26,8 @@ html {
 
 
 a {
-	color: #570e0e;
+	color: #a2582c;
+	;
 }
 
 a:hover {
@@ -192,7 +193,7 @@ h3 {
 }
 
 .search i {
-	color: #570e0e;
+	color: #a2582c;;
 	cursor: pointer;
 	position: absolute;
 	right: 10px;
@@ -216,7 +217,7 @@ h3 {
 	color: #818285;
 	font-weight: 300;
 	outline: none;
-	border: 1px solid #570e0e;
+	border: 1px solid #a2582c;;
 	margin-top: 20px;
 	border-radius: 4px;
 }
@@ -302,11 +303,13 @@ h3 {
 .navbar-inverse .navbar-nav > .open > a {
 	background-color: inherit;
 	border: 0;
-	color: #570e0e;
+	color: #a2582c;
+	;
 }
 
 #header .navbar-inverse .navbar-nav li a:hover {
-	color: #570e0e;
+	color: #a2582c;
+	;
 }
 
 #header [data-title]:after {
@@ -433,6 +436,41 @@ h3 {
 	background-color: #007a53;
 }
 
+.migas {
+	width: 100%;
+	padding: 0px;
+	padding: .2em .5em;
+	border-bottom: .5px solid rgba(87, 14, 14, .3);
+}
+
+
+.migas a {
+	color: rgb(87, 14, 14);
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Roboto Slab", serif;
+}
+
+.migas a:hover {
+	color: #888;
+	font-weight: normal;
+	border-bottom: 1px dashed rgb(87, 14, 14);
+	padding-bottom: 0.1em;
+}
+
+.migas a:hover:visited {
+	color: #444;
+}
+
+.migas i {
+
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.8em;
+	color: #666;
+}
+
 /*  Dropdown menu*/
 
 ul.sub-menu {
@@ -451,7 +489,8 @@ ul.sub-menu {
 }
 
 #header .navbar-nav li ul.sub-menu li .active {
-	background: #570e0e;
+	background: #a2582c;
+	;
 	color: #fff;
 	position: relative;
 }
@@ -460,7 +499,8 @@ ul.sub-menu {
 	position: absolute;
 	font-size: 56px;
 	top: -13px;
-	color: #570e0e;
+	color: #a2582c;
+	;
 }
 
 #header .navbar-nav li ul.sub-menu li .active .fa-angle-right {
@@ -473,7 +513,7 @@ ul.sub-menu {
 
 #header .navbar-nav li ul.sub-menu li a:hover,
 #header .navbar-nav li ul.sub-menu li a:focus {
-	background: #570e0e;
+	background: #a2582c;
 	color: #fff;
 }
 
@@ -553,7 +593,8 @@ ul.sub-menu {
 	/*	padding: inherit;*/
 	text-align: center;
 	text-decoration: none;
-	color: #570e0e;
+	color: #a2582c;
+	;
 	/*	font-size: .7em;*/
 	/*	font-family: "Roboto Slab", serif;*/
 }
@@ -565,6 +606,63 @@ ul.sub-menu {
 	*/
 	/*	border-bottom: 1px dashed #888;*/
 }
+
+#footer {
+	padding: .2em;
+	border-top: 2px solid rgba(162, 88, 44, 0.7);
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	z-index: -1;
+	/*    display: none;*/
+	/*    visibility: hidden;*/
+}
+
+#footer h1 {}
+
+#footer > img {
+	width: 60%;
+	height: 100%;
+	margin: 0em 0em 0em 0em;
+	cursor: none;
+	border-right: 1px solid #a2582c;
+}
+
+#footer a > img {
+	width: 10%;
+	padding: .5em;
+	margin: 0em 0em 0em 0em;
+	cursor: none;
+}
+
+#footer a {
+	margin: 0.2em;
+	padding: inherit;
+	text-align: left;
+	text-decoration: none;
+	color: #a2582c;
+	;
+	font-size: .7em;
+	font-family: "Roboto Slab", serif;
+}
+
+
+#footer a:hover {
+	color: #888;
+	font-weight: normal;
+	border-bottom: 1px dashed #a2582c;
+	padding-bottom: 0.1em;
+}
+
+#footer a:hover:visited {
+	color: #444;
+}
+
+#footer .bottom-separator {
+	margin-bottom: 60px;
+}
+
+/*
 
 #footer {
 	padding-bottom: 10px;
@@ -582,6 +680,7 @@ ul.sub-menu {
 #footer .bottom-separator {
 	margin-bottom: 60px;
 }
+*/
 
 #message {
 	height: 110px;
@@ -684,7 +783,7 @@ ul.sub-menu {
 	text-transform: uppercase;
 	border-radius: 3px;
 	margin-top: 5px;
-	border-bottom: 3px solid #570e0e;
+	border-bottom: 3px solid #a2582c;
 	box-shadow: none;
 	padding: 10px;
 }
@@ -781,7 +880,7 @@ ul.sub-menu {
 	font-size: 48px;
 	height: 48px;
 	line-height: 48px;
-	color: #570e0e;
+	color: #a2582c;;
 	position: absolute;
 	left: 50%;
 	margin-left: -24px;
@@ -1076,7 +1175,8 @@ ul.sub-menu {
 
 .count h1 {
 	font-size: 60px;
-	color: #570e0e;
+	color: #a2582c;
+	;
 }
 
 .count h3 {
@@ -1120,7 +1220,7 @@ h3.top-zero {
 }
 
 .progress-bar.progress-bar-primary {
-	background: #570e0e;
+	background: #a2582c;
 }
 
 
@@ -2134,7 +2234,7 @@ span.stButton_gradient,
 }
 
 #map-section address a:hover {
-	color: #570e0e
+	color: #a2582c;
 }
 
 #contact-form #message {
@@ -2808,7 +2908,8 @@ span.stButton_gradient,
 	background-color: transparent;
 	height: 52px;
 	color: #fff;
-	border: 2px solid #570e0e;
+	border: 2px solid #a2582c;
+	;
 }
 
 #newsletter {
