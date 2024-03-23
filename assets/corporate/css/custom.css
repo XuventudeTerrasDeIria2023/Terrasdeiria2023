@@ -1,0 +1,627 @@
+ /******************
+	Obradoiro 2023 
+********************/
+ html {
+ 	scroll-behavior: smooth;
+ }
+
+ #arriba {
+ 	transform: rotate(90deg);
+ }
+
+ .center {
+ 	text-align: center;
+ }
+
+ .clear {
+ 	clear: both;
+ }
+
+ /* tamaños */
+ .small {
+ 	font-size: .8em;
+ }
+
+ i.small {
+ 	color: #e28743;
+ 	margin-right: .2em;
+ }
+
+ span.medium-italic {
+ 	font-size: .9em;
+ 	display: block;
+ 	margin: 0 0 .2em 1em;
+ 	width: 80%;
+ 	font-style: italic;
+ }
+
+ /* imaxes */
+
+ .img-flota-right {
+ 	float: right;
+
+ 	border-radius: .5em !important;
+ }
+
+ .img-flota-left {
+ 	float: right;
+ 	border-radius: .5em !important;
+ }
+
+ .img-xsmall {
+ 	width: 5%;
+ }
+
+ .img-small {
+ 	width: 15%;
+ }
+
+ .img-shadow {
+ 	filter: drop-shadow(3px 3px 3px #7C858E80);
+ }
+
+ .img-zoom {
+ 	z-index: 999999 !important;
+
+ }
+
+ .img-zoom:hover {
+
+ 	transform: scale(1.5);
+ 	-ms-transform: scale(1.5);
+ 	/* IE 9 */
+ 	-moz-transform: scale(1.5);
+ 	/* Firefox */
+ 	-webkit-transform: scale(1.5);
+ 	/* Safari and Chrome */
+ 	-o-transform: scale(1.5);
+ 	/* Opera */
+ 	padding: 1em;
+ 	z-index: 999999 !important;
+ }
+
+ /* LOGO */
+ .site-logo-2 > img {
+ 	float: left;
+ 	width: 8em;
+ 	margin-right: 0;
+ 	padding-top: 22px;
+ 	padding-bottom: 22px;
+ }
+
+ #header-mapa-concello {
+ 	float: left;
+ 	width: 10em;
+ 	filter: grayscale(50%);
+ }
+
+ /*fontes */
+ .negrita-xl {
+ 	font-weight: bolder;
+ 	font-size: 1em;
+ }
+
+ .subrayado {
+ 	padding: .1em;
+ 	border-bottom: 1px dashed #e28743;
+ }
+
+ /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');*/
+
+ .img-inside_dodro {
+ 	position: absolute;
+ 	top: 0%;
+ 	left: 17%;
+ 	/* 	transform: translate(-50%, -50%);*/
+ 	text-transform: uppercase;
+ 	font-size: 6rem;
+ 	font-family: 'Arial Black';
+ 	letter-spacing: 10px;
+ 	font-size: 8rem;
+ 	background: url("../../../imaxes/img_dodro/RUTA_RANCA_VELA_11.jpg");
+ 	background-size: contain;
+ 	background-clip: text;
+ 	color: transparent;
+ 	text-fill-color: transparent;
+ 	-webkit-text-fill-color: transparent;
+ 	-webkit-background-clip: text;
+ 	background-clip: text;
+ 	margin: 0 auto;
+ }
+
+ .img-inside_rois {
+ 	position: absolute;
+ 	top: 0%;
+ 	left: 17%;
+ 	width: 25vw;
+ 	/* 	transform: translate(-50%, -50%);*/
+ 	text-transform: uppercase;
+ 	font-size: 4em;
+ 	font-family: 'Arial Black';
+ 	letter-spacing: 10px;
+ 	background: url("../../../imaxes/img_rois/rio.jpg");
+ 	background-size: contain;
+ 	background-clip: text;
+ 	color: transparent;
+ 	text-fill-color: transparent;
+ 	-webkit-text-fill-color: transparent;
+ 	-webkit-background-clip: text;
+ 	background-clip: text;
+ 	margin: 0 auto;
+ }
+
+ .img-inside_padron {
+ 	position: absolute;
+ 	top: 0%;
+ 	left: 17%;
+ 	/* 	transform: translate(-50%, -50%);*/
+ 	text-transform: uppercase;
+ 	font-size: 6rem;
+ 	font-family: 'Arial Black';
+ 	letter-spacing: 10px;
+ 	font-size: 8rem;
+ 	background: url("../../../imaxes/img_padron/xardin2.jpg");
+ 	background-size: contain;
+ 	background-clip: text;
+ 	color: transparent;
+ 	text-fill-color: transparent;
+ 	-webkit-text-fill-color: transparent;
+ 	-webkit-background-clip: text;
+ 	background-clip: text;
+ 	margin: 0 auto;
+ }
+
+
+ /* pestañas para info concelo e parroquias */
+ .nav-tabs li {
+ 	min-width: 15%;
+ }
+
+ .nav-tabs li a:hover {
+ 	background: #e28743;
+ 	color: white;
+ }
+
+
+ /* data-title */
+
+ [data-title] {
+ 	position: relative;
+ }
+
+ data-title]:after {
+ 	text-transform: none;
+ 	font-size: 1em;
+ }
+
+ [data-title]:hover:after {
+ 	opacity: 1;
+ 	transition: all 0.1s ease 0.5s;
+ 	visibility: visible;
+ }
+
+ [data-title]:after {
+ 	content: attr(data-title);
+ 	background: #ccc;
+ 	color: #3e4d5c;
+ 	font-weight: 500;
+ 	font-size: .8em;
+ 	/* 	white-space: nowrap;*/
+ 	box-shadow: 1px 1px 3px #7C858E;
+ 	border: 1px solid #ccc;
+ 	z-index: 99999;
+ 	visibility: hidden;
+ 	border-radius: .5em;
+ 	position: absolute;
+ 	top: 0;
+ 	right: auto;
+ 	padding: .2em;
+ 	text-align: center;
+ 	width: 15em;
+ 	/*	text-transform: lowercase;*/
+ }
+
+ /* data-title para logo */
+
+ .site-logo-2[data-title]:after {
+ 	text-transform: none;
+ 	font-size: .7em;
+ }
+
+ .site-logo-2[data-title]:hover:after {
+ 	opacity: 1;
+ 	transition: all 0.1s ease 0.5s;
+ 	visibility: visible;
+ }
+
+ .site-logo-2[data-title]:after {
+ 	content: attr(data-title);
+ 	background: #7C858E;
+ 	color: #fff;
+ 	font-weight: 500;
+ 	font-size: .7em;
+ 	/* 	white-space: nowrap;*/
+ 	box-shadow: 1px 1px 3px #ccc;
+ 	border: 1px solid #ccc;
+ 	z-index: 99999;
+ 	visibility: hidden;
+ 	border-radius: 6px;
+ 	position: relative;
+ 	top: auto;
+ 	right: 10%;
+ 	padding: .1em;
+ 	text-align: center;
+ 	/*	text-transform: lowercase;*/
+ }
+
+ /* slider titulo */
+ .page-slider > h2 {
+ 	margin: 0px 0px 0px 5em;
+ }
+
+ /* carrusel index */
+ /* number of images*/
+ .carrusel {
+ 	/*
+		justify-content: center;
+		align-content: center;
+*/
+ 	/*		flex: 2;*/
+ 	/*		align-items: center;*/
+ 	--d: 12s;
+ 	/* duration */
+ 	display: grid;
+ 	overflow: hidden;
+ 	width: 35vw;
+ 	height: auto;
+ 	margin: 0;
+ 	padding: 1em;
+ 	float: right;
+ 	position: relative;
+ 	left: 7%;
+ 	-webkit-mask: linear-gradient(90deg, #0000, #ccc 10% 90%, #0000);
+ 	mask: linear-gradient(90deg, #0000, #ccc 10% 90%, #0000);
+ }
+
+ .carrusel > img {
+ 	grid-area: 1/1;
+ 	width: 100%;
+ 	aspect-ratio: 1.5;
+ 	object-fit: cover;
+ 	animation: animacion var(--d) linear infinite;
+ 	/*		border: 5px solid white;*/
+ 	padding: 1em 1em 3em 1em;
+ 	border: 1px solid #BFBFBF;
+ 	filter: drop-shadow(3px 3px 3px #7C858E80);
+
+ 	/* 	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);*/
+
+ }
+
+ @keyframes animacion {
+ 	80% {
+ 		transform: translate(-400%);
+
+ 	}
+
+ 	80.01% {
+ 		transform: translate(100%);
+
+ 	}
+
+ 	80.05% {
+ 		transform: translate(200%);
+
+ 	}
+ }
+
+ .carrusel > img:nth-child(2) {
+ 	animation-delay: calc(-0.2*var(--d));
+ }
+
+ .carrusel > img:nth-child(3) {
+ 	animation-delay: calc(-0.4*var(--d));
+ }
+
+ .carrusel > img:nth-child(4) {
+ 	animation-delay: calc(-0.6*var(--d));
+ }
+
+ .carrusel > img:nth-child(5) {
+ 	animation-delay: calc(-0.8*var(--d));
+ }
+
+
+
+ /* Obradoiros ANnteriores INDEX */
+ .btn-23 h2 {
+ 	background: #e28743;
+ 	color: #fff;
+ 	margin: .2em 0em;
+ 	padding: .1em .5em;
+ }
+
+ #obradoiros-anteriores {
+ 	width: 60%;
+ 	margin: 0 auto;
+ 	padding: 1em;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-content: center;
+ 	align-items: center;
+ }
+
+ #obradoiros-anteriores > div {
+ 	width: 30%;
+ 	margin: 0px 1em 0px 1em;
+ 	padding: .2em;
+ 	box-shadow: 0px 2px 5px 2px #3f5862;
+ 	animation-delay: 1000ms;
+ 	border-radius: .5em !important;
+ }
+
+ #obradoiros-anteriores a {
+ 	font-size: 1.2em;
+ 	font-weight: 800;
+ 	color: #3f5862;
+ 	padding: inherit;
+ 	text-decoration: none;
+ }
+
+ #obradoiros-anteriores a:hover {
+ 	/* 	text-decoration: none;*/
+ 	/* 	background: #3f5862;*/
+
+ }
+
+ #obradoiros-anteriores span {
+ 	display: block;
+ 	font-size: 1.2em;
+ 	font-weight: 800;
+ 	color: #3f5862;
+ 	padding: inherit;
+ 	text-decoration: none;
+ }
+
+ .container #obradoiros-anteriores img {
+ 	width: auto;
+ 	margin: 0px 5em 0px 0px;
+ }
+
+ /* footer INDEX */
+
+ img#logos-xunta {
+ 	width: 50%;
+ 	margin: 0em .5em;
+ 	padding: 0px .5em;
+ 	border-right: 1px solid rgba(91, 91, 91, 0.2);
+ }
+
+ footer.footer-light {
+ 	width: 100%;
+ 	background: #fcfafb;
+ 	border: 1px solid rgba(91, 91, 91, 0.2);
+ }
+
+ footer.footer-light .copyright {
+ 	width: 100%;
+ 	margin: 0 auto;
+ 	color: #3f5862;
+ 	font-size: 1em;
+ 	padding: .5em;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-content: flex-end;
+ 	align-items: flex-end;
+ 	flex-wrap: wrap;
+ 	border-bottom: 1px solid rgba(91, 91, 91, 0.2);
+ }
+
+ footer.footer-light img {
+ 	width: 25%;
+ 	margin: .2em;
+ 	padding: 0px;
+ }
+
+ footer.footer-light .copyright > a.foot-link {
+ 	margin: 0.5em 1em;
+ 	padding: .5em;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	color: #3f5862;
+ 	font-size: 1em;
+ }
+
+ footer.footer-light a.foot-link:hover {
+
+ 	background: #3f5862;
+ 	color: #fff;
+ 	box-shadow: 0px 2px 5px 2px #3f5862;
+ }
+
+
+ footer.footer-light .copyright > .social-icons {
+ 	margin: 0px;
+ 	padding: .5em;
+ 	display: block;
+ 	justify-content: center;
+ 	align-items: center;
+ 	text-align: center;
+ 	border-right: 1px solid #ccc;
+ }
+
+ footer.footer-light .copyright > .social-icons p {
+ 	color: #e28743;
+ 	font-weight: 700;
+
+ }
+
+ /* fin FOOTER index */
+ /* footer sitio */
+
+
+ /* MAPAS    estilo  mapas *********/
+
+ #map {
+ 	height: 80vh;
+ 	width: 80vw;
+ 	border: 1px solid blue;
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-weight: normal;
+
+ }
+
+
+ #map > bindPopup {
+ 	width: 400px !important;
+ 	background: #F9F9F9;
+ 	color: #000;
+ 	box-shadow: 0px 2px 5px 2px #3f5862;
+ }
+
+ #map img {
+ 	width: 100%;
+ }
+
+ /*
+#gmap_div {
+	height: 90vh !important;
+	width: 80vw !important;
+	text-align: center;
+	margin: 5em;
+	border: 2px solid blue;
+}
+*/
+
+ /******** contenedor galeria *********/
+
+ .galeria-container {
+ 	width: 90%;
+ 	height: auto;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-content: flex-start;
+ 	align-items: center;
+ 	flex-wrap: wrap;
+ 	margin: 0 auto;
+ 	text-align: center;
+ }
+
+ .galeria-container div {
+ 	width: 22%;
+ 	height: auto;
+ }
+
+ /********  pop-up  MODAL *********/
+ .modal {
+ 	align-items: center;
+ 	display: flex;
+ 	justify-content: center;
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0%;
+ 	right: 0;
+ 	width: auto;
+ 	height: 50%;
+ 	background: #e2874380;
+
+ 	visibility: hidden;
+ 	opacity: 0;
+
+ 	border-radius: 2em;
+ 	transition: all 0.4s;
+ 	transition: ease-out 0.4s;
+ }
+
+ .modal p {
+ 	font-size: 1em;
+ 	align-items: center;
+ 	position: absolute;
+ 	background: white;
+ 	width: 90%;
+ 	height: auto;
+ 	padding: 1em 2em;
+ 	border-radius: 2em;
+ }
+
+ .modal:target {
+ 	visibility: visible;
+ 	opacity: 1;
+ }
+
+ .modal .box-close {
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	text-decoration: none;
+ 	font-size: 1.5em;
+ 	font-weight: bold;
+ 	padding: .2em;
+ 	background: #fff;
+ 	color: #e28743;
+ }
+
+ .modal .box-close:hover {
+
+ 	background: #e28743;
+ 	color: #fff;
+ }
+
+ /* mostrar/ocultar acordeon */
+ .acordeon {
+ 	display: flex;
+ }
+
+ .accordion {
+ 	/* 	background-color: #eee;*/
+ 	background-color: white;
+ 	color: #444;
+ 	cursor: pointer;
+ 	padding: .2em;
+ 	width: auto;
+ 	border: none;
+ 	font-weight: bold;
+ 	outline: none;
+ 	font-size: auto;
+ 	transition: 0.4s;
+ }
+
+ .active,
+ .accordion:hover {
+
+ 	/* 	background-color: #ccc;*/
+ }
+
+ .accordion:after {
+ 	content: '\002B';
+ 	color: #e28743;
+ 	font-size: 1.2em;
+ 	font-weight: bolder;
+ 	float: right;
+ 	margin-left: .5em;
+ }
+
+ .active:after {
+ 	content: "\2212";
+ }
+
+ .panel {
+ 	padding: 0 18px;
+ 	max-height: 0;
+ 	width: auto;
+ 	background-color: white;
+
+ 	overflow: hidden;
+ 	transition: max-height 0.2s ease-out;
+ 	border: 1px solid blue;
+ }
+
+ .panel img {
+ 	float: left;
+ 	margin-right: .5em;
+
+ }
