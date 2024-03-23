@@ -1,0 +1,23 @@
+ color base red
+#e28743
+
+ color base azul
+ #64aed9
+ #1e81b0
+ color base beige
+ #e28743
+ 
+ color gris-azulado
+  	#3f5862;
+
+ 
+ 
+ 
+ /* 	background: #236c87;*/
+ 	/* 	background: #64aed9;*/
+ 	/* 	background: #e28743;*/
+/* 	background: #3f5862;*/
+ 	/* 	background: #e28743;*/
+	
+	background-color: #3f5862E6;  
+	40% — 66 90% — E6

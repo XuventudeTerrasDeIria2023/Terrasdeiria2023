@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+
+<!-- Head INICIO -->
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Fuentes INICIO -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+	<!-- Fuentes FIN -->
+	<!-- Estilos globales INICIO -->
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Estilos globales FIN -->
+	<!-- Estilos de complementos a nivel de página INICIO -->
+	<link href="assets/pages/css/animate.css" rel="stylesheet">
+	<link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+	<link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+	<!-- Estilos de complementos a nivel de página FIN -->
+
+	<!-- Etiquetas META INICIO -->
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta lang="gl">
+	<meta itemprop="author" content="Programa de Emprego Xuventude Terras de Iria 2023 Dodro, Padrón, Rois">
+	<meta name="title" content="Programa de Emprego Xuventude Terras de Iria 2023 Dodro, Padrón, Rois">
+	<meta name="description" content="Programa de Emprego Xuventude Terras de Iria 2023 Concello de Dodro, Concello de Padrón e Concello de Rois">
+	<meta name="keywords" content="Dodro, Rois, Padrón, Municipio, Concello, Ayuntamiento, Terras de Iria, Galicia, Xacobeo, Flora, Fauna. Deportes, Dróns, actualidade cultura, sendeirismo, cultural">
+	<meta name="robots" content="index,follow">
+	<!-- Etiquetas META FIN -->
+
+	<title>Xuventude Terra de Iria 2023</title>
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Estilos INICIO -->
+	<link href="assets/pages/css/components.css" rel="stylesheet">
+	<link href="assets/corporate/css/style.css" rel="stylesheet">
+	<link href="assets/pages/css/gallery.css" rel="stylesheet">
+	<link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
+	<link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
+	<link href="assets/corporate/css/custom.css" rel="stylesheet">
+	<!--  Estilos FIN -->
+	<!-- script mapas -->
+
+	<style type="text/css">
+		#gmap_div {
+			height: 100vh;
+			width: 100vw;
+			border: 1px solid blue;
+		}
+
+		/* Put any custom style definitions here (e.g., .gv_marker_info_window, .gv_marker_info_window_name, .gv_marker_list_item, .gv_tooltip, .gv_label, etc.) */
+		#gmap_div .gv_marker_info_window {
+			font-size: 1.5em !important;
+		}
+
+		#gmap_div .gv_label {
+			opacity: 0.90;
+			filter: alpha(opacity=90);
+			color: blue;
+			background: #333333;
+			border: 5px solid black;
+			padding: 1px;
+			font-family: Verdana !important;
+			font-size: 10px;
+			font-weight: normal !important;
+		}
+
+		.legend_block {
+			display: inline-block;
+			border: 5px solid black;
+			width: 9px;
+			height: 9px;
+			margin: 0px 2px 0px 0px;
+		}
+
+	</style>
+</head>
+
+
+<body class="corporate">
+	<!-- header INICIO -->
+	<div class="header">
+		<div class="container">
+			<a class="site-logo-2" href="index.html">
+				<img src="imaxes/Logo_Xuve_Terras_2023.png" alt="Programa de Emprego Xuventude Terras de Iria 2023 Concello de Dodro, Concello de Padrón e Concello de Rois">
+				<img class="img-responsive" id="header-mapa-concello" src="imaxes/slider/mapa_Concello_Dodro_color.png"></a>
+
+			<a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+			<!-- Menú navegación INICIO -->
+			<nav class="header-navigation pull-right font-transform-inherit">
+				<ul>
+					<li class="dropdown">
+						<a class="dropdown-toggle active" data-toggle="dropdown" data-target="#" href="javascript:;">
+							Flora
+						</a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="#">Floral</a></li>
+							<li><a href="#">Monte</a></li>
+							<li><a href="#">Outras especies</a></li>
+							<li><a href="page-gallery.html">Galería</a></li>
+							<li><a href="#">Mapa</a></li>
+
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+							Fauna
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="page-about.html">Aves</a></li>
+							<li class="active"><a href="#">Mamíferos</a></li>
+							<li><a href="#">Reptís</a></li>
+							<li><a href="#">Anfibios</a></li>
+							<li><a href="page-gallery.html">Galería</a></li>
+							<li><a href="#">Mapa</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+							Dróns
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Podo?</a></li>
+							<li><a href="#">Onde?</a></li>
+							<li><a href="#">Como?</a></li>
+							<li><a href="page-gallery.html">Galería</a></li>
+
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+							Deportes
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Inventario</a></li>
+							<li><a href="#">Mapa</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a target="_blank" href="https://culturaterrasdeiria.blogspot.com/">
+							Novas cultura
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- Menú navegación FIN -->
+
+		</div>
+	</div>
+	<!-- header FIN -->
+
+	<div class="main">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="javascript:;">Dodro</a></li>
+				<li><a href="#">Flora</a></li>
+				<li class="active">Mapa</li>
+			</ul>
+			<!--  Contido INICIO -->
+
+			<div class="row margin-bottom-40">
+				<div class="col-md-12">
+					<h1>Mapa de ..... proba</h1>
+					<div class="content-page">
+						<div class="row margin-bottom-40">
+							<div class="col-md-3 col-sm-4 gallery-item">
+								<div id="gmap_div">
+
+								</div>
+								<!-- ******************* empeza mapa ******************* -->
+								<script type="text/javascript">
+									API = 'leaflet'; // can be either 'leaflet' or 'google'
+									if (self.API && API.match(/^g/i)) {
+										google_api_key = ''; // Your project's Google Maps API key goes here (https://code.google.com/apis/console)
+										language_code = '';
+										document.writeln('<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;libraries=geometry&amp;language=' + (self.language_code ? self.language_code : '') + '&amp;key=' + (self.google_api_key ? self.google_api_key : '') + '" type="text/javascript"><' + '/script>');
+									} else {
+										document.writeln('<link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet">');
+										document.writeln('<script src="https://unpkg.com/leaflet/dist/leaflet.js" type="text/javascript"><' + '/script>');
+									}
+									thunderforest_api_key = ''; // To display OpenStreetMap tiles from ThunderForest, you need a key (https://www.thunderforest.com/docs/apikeys/)
+									ign_api_key = ''; // To display topo tiles from IGN.fr, you need a key (https://api.ign.fr/)
+
+								</script>
+
+
+								<script type="text/javascript">
+									/* Global variables used by the GPS Visualizer functions (20240312043714): */
+									gv_options = {};
+
+									// basic map parameters:
+									gv_options.center = [42.717121, -8.732033]; // [latitude,longitude] - be sure to keep the square brackets
+									gv_options.zoom = 14; // higher number means closer view; can also be 'auto' for automatic zoom/center based on map elements
+									gv_options.map_type = ['GV_MAP', 'GV_HYBRID', 'GV_OSM', 'GV_TOPO', 'OPENCYCLEMAP', 'G_PHYSICAL_MAP', 'GV_PHYSICAL', 'GV_TERRAIN', 'G_SATELLITE_MAP', 'GV_AERIAL', 'GV_SATELLITE']; // Susi -  las opciones populares de tipo de mapa son 'GV_STREET', 'GV_SATELLITE', 'GV_HYBRID', 'GV_TERRAIN', 'GV_OSM', 'GV_TOPO_US', 'GV_TOPO_WORLD' (https://www.gpsvisualizer.com/misc/leaflet_map_types.html)
+
+									gv_options.map_opacity = 1.00; // number from 0 to 1
+									gv_options.full_screen = false; // Susi Deixar en false, senon descontrola a páxina - verdadero|falso: ¿el mapa debería llenar toda la página (o marco)?
+									gv_options.width = 600; // width of the map, in pixels
+									gv_options.height = 600; // height of the map, in pixels
+
+									gv_options.map_div = 'gmap_div'; // Susi - nome do "div" que conten mapa; normalmente 'gmap_div'
+									gv_options.doubleclick_zoom = true; // true|false: zoom in when mouse is double-clicked?
+									gv_options.doubleclick_center = true; // true|false: re-center the map on the point that was double-clicked?
+									gv_options.scroll_zoom = true; // true|false; or 'reverse' for down=in and up=out
+									gv_options.page_scrolling = true; // true|false; does the map relenquish control of the scroll wheel when embedded in scrollable pages?
+									gv_options.autozoom_adjustment = 0;
+									gv_options.autozoom_default = 11;
+									gv_options.centering_options = {
+										'open_info_window': true,
+										'partial_match': true,
+										'center_key': 'center',
+										'default_zoom': null
+									} // URL-based centering (e.g., ?center=name_of_marker&zoom=14)
+									gv_options.street_view = false; // true|false: allow Google Street View on the map (Google Maps only)
+									gv_options.tilt = false; // true|false: allow Google Maps to show 45-degree tilted aerial imagery?
+									gv_options.disable_google_pois = false; // true|false: if you disable clickable POIs on Google Maps, you also lose the labels on parks, airports, etc.
+									gv_options.animated_zoom = true; // true|false: only affects Leaflet maps
+
+									// widgets on the map:
+									gv_options.zoom_control = 'auto'; // 'auto'|'large'|'small'|'none'
+									gv_options.recenter_button = true; // true|false: is there a 'click to recenter' button above the zoom control?
+									gv_options.geolocation_control = false; // true|false; only works on secure servers
+									gv_options.geolocation_options = {
+										center: true,
+										zoom: null,
+										marker: true,
+										info_window: true
+									};
+
+									gv_options.scale_control = true; // true|false
+									gv_options.map_opacity_control = false; // true|false
+									gv_options.map_type_control = {}; // widget to change the background map
+									gv_options.map_type_control.visible = 'auto'; // true|false|'auto': is a map type control placed on the map itself?
+									gv_options.map_type_control.filter = false; // true|false: when map loads, are irrelevant maps ignored?
+									gv_options.map_type_control.excluded = []; // comma-separated list of quoted map IDs that will never show in the list ('included' also works)
+									gv_options.map_type_control.included = ['GV_MAP', 'GV_HYBRID', 'GV_OSM', 'GV_TOPO', 'OPENCYCLEMAP', 'G_PHYSICAL_MAP', 'GV_PHYSICAL', 'GV_TERRAIN', 'G_SATELLITE_MAP', 'GV_AERIAL', 'GV_SATELLITE']; // Susi - elexir os mapas que funcionan  
+									gv_options.center_coordinates = true; // true|false: show a "center coordinates" box and crosshair?
+									gv_options.measurement_tools = false; // Susi - Verdadera | falsa: ¿poner una regla de medición en el mapa?
+									gv_options.measurement_options = {
+										visible: false,
+										distance_color: '',
+										area_color: ''
+									};
+									gv_options.crosshair_hidden = false; // true|false: hide the crosshair initially?
+									gv_options.mouse_coordinates = false; // Susi - verdadero|falso: ¿mostrar un cuadro de "coordenadas del mouse"?
+									gv_options.utilities_menu = {
+										'maptype': true,
+										'opacity': true,
+										'measure': true,
+										'geolocate': true,
+										'profile': true
+									};
+									gv_options.allow_export = false; // true|false
+
+									gv_options.infobox_options = {}; // options for a floating info box (id="gv_infobox"), which can contain anything
+									gv_options.infobox_options.enabled = true; // true|false: enable or disable the info box altogether
+									gv_options.infobox_options.position = ['LEFT_TOP', 52, 4]; // [Google anchor name, relative x, relative y]
+									gv_options.infobox_options.draggable = true; // true|false: can it be moved around the screen?
+									gv_options.infobox_options.collapsible = true; // Susi - verdadero|falso: ¿se puede contraer haciendo doble clic en su barra superior?
+
+									// track-related options:
+									gv_options.track_optimization = 1; // sets Leaflet's smoothFactor parameter
+									gv_options.track_tooltips = false; // Susi - verdadero|falso: ¿debería aparecer el nombre de una pista en el mapa cuando pasa el mouse sobre la pista?
+									gv_options.tracklist_options = {}; // options for a floating list of the tracks visible on the map
+									gv_options.tracklist_options.enabled = false; // Susi - Verdadera | falsa: habilita o deshabilita la lista de pistas por completo
+									gv_options.tracklist_options.position = ['RIGHT_TOP', 4, 32]; // [Google anchor name, relative x, relative y]
+									gv_options.tracklist_options.min_width = 100; // minimum width of the tracklist, in pixels
+									gv_options.tracklist_options.max_width = 180; // maximum width of the tracklist, in pixels
+									gv_options.tracklist_options.min_height = 0; // minimum height of the tracklist, in pixels; if the list is longer, scrollbars will appear
+									gv_options.tracklist_options.max_height = 310; // maximum height of the tracklist, in pixels; if the list is longer, scrollbars will appear
+									gv_options.tracklist_options.desc = true; // true|false: should tracks' descriptions be shown in the list
+									gv_options.tracklist_options.toggle = false; //Susi - verdadero|falso: ¿al hacer clic en el nombre de una pista debería activarse o desactivarse?
+									gv_options.tracklist_options.checkboxes = true; // true|false: should there be a separate icon/checkbox for toggling visibility?
+									gv_options.tracklist_options.zoom_links = true; // true|false: should each item include a small icon that will zoom to that track?
+									gv_options.tracklist_options.highlighting = true; // Susi -verdadero|falso: ¿debería resaltarse la pista al pasar el mouse sobre el nombre en la lista?
+									gv_options.tracklist_options.tooltips = false; // Susi - verdadero|falso: ¿debería resaltarse la pista al pasar el mouse sobre el nombre en la lista?
+									gv_options.tracklist_options.draggable = true; // true|false: can it be moved around the screen?
+									gv_options.tracklist_options.collapsible = true; // true|false: can it be collapsed by double-clicking its top bar?
+									gv_options.tracklist_options.header = 'Tracks:'; //Susi - Código HTML; asegúrese de poner barras invertidas delante de las comillas simples y no incluya saltos de línea
+									gv_options.tracklist_options.footer = ''; // HTML code
+									gv_options.profile_options = {
+										visible: false,
+										icon: true,
+										units: 'metric',
+										filled: true,
+										waypoints: true,
+										height: 120,
+										width: '100%',
+										y_min: null,
+										y_max: null,
+										gap_between_tracks: false
+									}; // see https://www.gpsvisualizer.com/tutorials/profiles_in_maps.html
+
+
+									// marker-related options:
+									gv_options.default_marker = {
+										color: 'yellow',
+										// icon: 'camera',
+										icon: 'imaxes/iconos/ubicacion.png',
+										//										size: [32, 32],
+										scale: 1
+									}; // Susi - El icono puede ser una URL, pero asegúrese de incluir también tamaño:[w,h] y, opcionalmente, anclaje:[x,y]
+									gv_options.vector_markers = true; // aSusi - ¿Están los íconos en el mapa en formato SVG incrustado?
+									gv_options.marker_tooltips = true; // do the names of the markers show up when you mouse-over them?
+									gv_options.marker_shadows = true; // Susi - verdadero|falso: ¿los marcadores estándar tienen "sombras" detrás de ellos?
+									gv_options.marker_link_target = '_blank'; // the name of the window or frame into which markers' URLs will load
+									gv_options.info_window_width = 0; // in pixels, the width of the markers' pop-up info "bubbles" (can be overridden by 'window_width' in individual markers)
+									gv_options.thumbnail_width = 0; // in pixels, the width of the markers' thumbnails (can be overridden by 'thumbnail_width' in individual markers)
+									gv_options.photo_size = [0, 0]; // in pixels, the size of the photos in info windows (can be overridden by 'photo_width' or 'photo_size' in individual markers)
+									gv_options.hide_labels = false; // true|false: hide labels when map first loads?
+									gv_options.labels_behind_markers = false; // true|false: are the labels behind other markers (true) or in front of them (false)?
+									gv_options.label_offset = [0, 0]; // [x,y]: shift all markers' labels (positive numbers are right and down)
+									gv_options.label_centered = false; // true|false: center labels with respect to their markers?  (label_left is also a valid option.)
+									gv_options.driving_directions = false; // put a small "driving directions" form in each marker's pop-up window? (override with dd:true or dd:false in a marker's options)
+									gv_options.garmin_icon_set = ' '; // Susi - 'gpsmap' son los pequeños iconos de 16x16; cámbielo a '24x24' para íconos más grandes
+									gv_options.marker_list_options = {}; // options for a dynamically-created list of markers
+									gv_options.marker_list_options.enabled = false; // true|false: enable or disable the marker list altogether
+									gv_options.marker_list_options.floating = true; // is the list a floating box inside the map itself?
+									gv_options.marker_list_options.position = ['RIGHT_BOTTOM', 6, 38]; // floating list only: position within map
+									gv_options.marker_list_options.min_width = 160; // minimum width, in pixels, of the floating list
+									gv_options.marker_list_options.max_width = 160; // maximum width
+									gv_options.marker_list_options.min_height = 0; // minimum height, in pixels, of the floating list
+									gv_options.marker_list_options.max_height = 310; // maximum height
+									gv_options.marker_list_options.draggable = false; // true|false, floating list only: can it be moved around the screen?
+									gv_options.marker_list_options.collapsible = true; // true|false, floating list only: can it be collapsed by double-clicking its top bar?
+									gv_options.marker_list_options.include_tickmarks = false; // true|false: are distance/time tickmarks included in the list?
+									gv_options.marker_list_options.include_trackpoints = false; // true|false: are "trackpoint" markers included in the list?
+									gv_options.marker_list_options.dividers = false; // true|false: will a thin line be drawn between each item in the list?
+									gv_options.marker_list_options.desc = false; // true|false: will the markers' descriptions be shown below their names in the list?
+									gv_options.marker_list_options.icons = true; // true|false: should the markers' icons appear to the left of their names in the list?
+									gv_options.marker_list_options.icon_scale = 'x1'; // size of the icons in the list; you can also supply a size in pixels (e.g. '16px')
+									gv_options.marker_list_options.thumbnails = false; // true|false: should markers' thumbnails be shown in the list?
+									gv_options.marker_list_options.folders_collapsed = false; // true|false: do folders in the list start out in a collapsed state?
+									gv_options.marker_list_options.folders_hidden = false; // true|false: do folders in the list start out in a hidden state?
+									gv_options.marker_list_options.collapsed_folders = []; // an array of folder names
+									gv_options.marker_list_options.hidden_folders = []; // an array of folder names
+									gv_options.marker_list_options.count_folder_items = false; // true|false: list the number of items in each folder?
+									gv_options.marker_list_options.folder_zoom = true; // true|false: is there a zoom link next to each folder name?
+									gv_options.marker_list_options.folders_first = true; // true|false: do folders in the list come before un-foldered markers?
+									gv_options.marker_list_options.wrap_names = true; // true|false: should marker's names be allowed to wrap onto more than one line?
+									gv_options.marker_list_options.unnamed = '[unnamed]'; // what 'name' should be assigned to  unnamed markers in the list?
+									gv_options.marker_list_options.colors = false; // true|false: should the names/descs of the points in the list be colorized the same as their markers?
+									gv_options.marker_list_options.default_color = ''; // default HTML color code for the names/descs in the list
+									gv_options.marker_list_options.limit = 0; // how many markers to show in the list; 0 for no limit
+									gv_options.marker_list_options.center = false; // true|false: does the map center upon a marker when you click its name in the list?
+									gv_options.marker_list_options.zoom = false; // true|false: does the map zoom to a certain level when you click on a marker's name in the list?
+									gv_options.marker_list_options.zoom_level = 16; // if 'zoom' is true, what level should the map zoom to?
+									gv_options.marker_list_options.info_window = true; // true|false: do info windows pop up when the markers' names are clicked in the list?
+									gv_options.marker_list_options.url_links = false; // true|false: do the names in the list become instant links to the markers' URLs?
+									gv_options.marker_list_options.toggle = false; // true|false: does a marker disappear if you click on its name in the list?
+									gv_options.marker_list_options.help_tooltips = false; // true|false: do "tooltips" appear on marker names that tell you what happens when you click?
+									gv_options.marker_list_options.id = 'gv_marker_list'; // id of a DIV tag that holds the list
+									gv_options.marker_list_options.header = ''; // HTML code; be sure to put backslashes in front of any single quotes, and don't include any line breaks
+									gv_options.marker_list_options.footer = ''; // HTML code
+									gv_options.marker_filter_options = {}; // options for removing waypoints that are out of the current view
+									gv_options.marker_filter_options.enabled = false; // true|false: should out-of-range markers be removed?
+									gv_options.marker_filter_options.movement_threshold = 8; // in pixels, how far the map has to move to trigger filtering
+									gv_options.marker_filter_options.limit = 0; // maximum number of markers to display on the map; 0 for no limit
+									gv_options.marker_filter_options.update_list = true; // true|false: should the marker list be updated with only the filtered markers?
+									gv_options.marker_filter_options.sort_list_by_distance = false; // true|false: should the marker list be sorted by distance from the center of the map?
+									gv_options.marker_filter_options.min_zoom = 0; // Susi - debajo de este nivel de zoom, no muestra ningún marcador
+									gv_options.marker_filter_options.zoom_message = ''; // message to put in the marker list if the map is below the min_zoom threshold
+									gv_options.synthesize_fields = {}; // for example: {label:'{name}'} would cause all markers' names to become visible labels
+
+
+
+									// Load GPS Visualizer's mapping functions (this must be loaded AFTER gv_options are set):
+									var script_file = (self.API && API.match(/^g/i)) ? 'google_maps/functions3.js' : 'leaflet/functions.js';
+									document.writeln('<script src="https://www.gpsvisualizer.com/' + script_file + '" type="text/javascript"><' + '/script>');
+
+								</script>
+								<!-- end GPSV setup script and styles; begin map-drawing script (they must be separate) -->
+								<script type="text/javascript">
+									function GV_Map() {
+										GV_Setup_Map();
+
+										// Track #1
+										t = 1;
+										trk[t] = {
+											info: [],
+											segments: []
+										};
+										trk[t].info.name = 'Ruta Pensa Nao (Circular) - DODRO';
+										trk[t].info.desc = '';
+										trk[t].info.clickable = true;
+										trk[t].info.color = 'orange'; // Susi -  Cor da liña da ruta
+										trk[t].info.width = 5;
+										trk[t].info.opacity = 0.9;
+										trk[t].info.hidden = false;
+										trk[t].info.z_index = null;
+										trk[t].info.outline_color = 'black';
+										trk[t].info.outline_width = 0;
+										trk[t].info.fill_color = ' '; // Susi - recheo do territorio que ocupa a ruta
+										trk[t].info.fill_opacity = 0;
+										trk[t].info.elevation = true;
+										trk[t].segments.push({
+											points: [
+												[42.711993, -8.723746, 32.354],
+												[42.711678, -8.723807, 31.856],
+												[42.711477, -8.721313, 30.411],
+												[42.711282, -8.720956, 30.408],
+												[42.71056, -8.720678, 30.413],
+												[42.70955, -8.718815, 24.632],
+												[42.709284, -8.718005, 24.118],
+												[42.70994, -8.717825, 24.615],
+												[42.71107, -8.716534, 24.18],
+												[42.71044, -8.715325, 23.67],
+												[42.711144, -8.716583, 23.676],
+												[42.712406, -8.715314, 23.281],
+												[42.712651, -8.715511, 23.273],
+												[42.713345, -8.717082, 23.685],
+												[42.714997, -8.715482, 24.613],
+												[42.715078, -8.713844, 24.108],
+												[42.71675, -8.7152, 28.095],
+												[42.720452, -8.715514, 36.624],
+												[42.720848, -8.715761, 38.58],
+												[42.721178, -8.716277, 37.667],
+												[42.72164, -8.716448, 38.562],
+												[42.722069, -8.716322, 41.932],
+												[42.723741, -8.714741, 48.648],
+												[42.724221, -8.715356, 56.833],
+												[42.724638, -8.715622, 59.293],
+												[42.725409, -8.715553, 59.265],
+												[42.725967, -8.715165, 61.121],
+												[42.72655, -8.715111, 65.908],
+												[42.726991, -8.715556, 70.787],
+												[42.727437, -8.716399, 75.666],
+												[42.72715, -8.71732, 72.232],
+												[42.727254, -8.717485, 69.849],
+												[42.727984, -8.717122, 78.094],
+												[42.728474, -8.717998, 80.414],
+												[42.729089, -8.717985, 85.24],
+												[42.72986, -8.717813, 89.565],
+												[42.729996, -8.717669, 90.588],
+												[42.730214, -8.718514, 90.024],
+												[42.73131, -8.719641, 89.526],
+												[42.731364, -8.720022, 92.908],
+												[42.731033, -8.720293, 98.146],
+												[42.730976, -8.720718, 103.435],
+												[42.731634, -8.720933, 113.011],
+												[42.732314, -8.720949, 120.738],
+												[42.732752, -8.721167, 124.113],
+												[42.734116, -8.723194, 152.973],
+												[42.733002, -8.722185, 157.379],
+												[42.732417, -8.722037, 157.394],
+												[42.731385, -8.722696, 158.734],
+												[42.731046, -8.723368, 160.255],
+												[42.730561, -8.723556, 162.11],
+												[42.730012, -8.723412, 163.508],
+												[42.729836, -8.723569, 165.091],
+												[42.730047, -8.724045, 169.37],
+												[42.730532, -8.72449, 179.436],
+												[42.72984, -8.725495, 190.093],
+												[42.727991, -8.724834, 186.138],
+												[42.727598, -8.724813, 186.648],
+												[42.727057, -8.725503, 196.254],
+												[42.726063, -8.725437, 194.859],
+												[42.72489, -8.725825, 213.511],
+												[42.724976, -8.72615, 217.821],
+												[42.724817, -8.72626, 220.703],
+												[42.725119, -8.726125, 219.308],
+												[42.727194, -8.726676, 229.469],
+												[42.728617, -8.726658, 237.598],
+												[42.729249, -8.727185, 248.174],
+												[42.729417, -8.727793, 252.921],
+												[42.728365, -8.728131, 261.696],
+												[42.728235, -8.728581, 266.916],
+												[42.728395, -8.729106, 273.622],
+												[42.728219, -8.729662, 277.067],
+												[42.727979, -8.729864, 276.549],
+												[42.72749, -8.729147, 273.602],
+												[42.72724, -8.729243, 273.122],
+												[42.726987, -8.729591, 275.508],
+												[42.726654, -8.730579, 277.472],
+												[42.725893, -8.731377, 273.131],
+												[42.725296, -8.73235, 264.917],
+												[42.725006, -8.731758, 255.354],
+												[42.724868, -8.7303, 246.779],
+												[42.724534, -8.729251, 243.839],
+												[42.724493, -8.728142, 235.125],
+												[42.724353, -8.727978, 231.84],
+												[42.72357, -8.727468, 217.856],
+												[42.722158, -8.727118, 200.059],
+												[42.721822, -8.727276, 194.814],
+												[42.721295, -8.727855, 188.008],
+												[42.721552, -8.729119, 200.553],
+												[42.7221, -8.730419, 201.582],
+												[42.721763, -8.731649, 213.578],
+												[42.72215, -8.733528, 216.965],
+												[42.721458, -8.736548, 218.83],
+												[42.72097, -8.737383, 213.59],
+												[42.720514, -8.737851, 206.366],
+												[42.720334, -8.738538, 199.181],
+												[42.720177, -8.738664, 197.231],
+												[42.71997, -8.738558, 195.261],
+												[42.719464, -8.740534, 194.807],
+												[42.719162, -8.741125, 194.308],
+												[42.718888, -8.741111, 195.731],
+												[42.718717, -8.740533, 201.56],
+												[42.718471, -8.740296, 202.916],
+												[42.717718, -8.740311, 206.853],
+												[42.71716, -8.739755, 212.598],
+												[42.716919, -8.73971, 214.098],
+												[42.716272, -8.740395, 215.914],
+												[42.715304, -8.740933, 218.819],
+												[42.713727, -8.740505, 222.279],
+												[42.712456, -8.740591, 227.905],
+												[42.712039, -8.741186, 228.925],
+												[42.711396, -8.741609, 224.608],
+												[42.711288, -8.741833, 222.635],
+												[42.711216, -8.743216, 223.684],
+												[42.710953, -8.74407, 226.01],
+												[42.709112, -8.745991, 224.617],
+												[42.708742, -8.746669, 225.012],
+												[42.707772, -8.747579, 227.922],
+												[42.707344, -8.747762, 228.958],
+												[42.706484, -8.747501, 232.373],
+												[42.706044, -8.748017, 235.199],
+												[42.704912, -8.748879, 241.907],
+												[42.703641, -8.74882, 250.527],
+												[42.703152, -8.749445, 250.008],
+												[42.702102, -8.750224, 254.417],
+												[42.701187, -8.749933, 262.186],
+												[42.700977, -8.750201, 266.992],
+												[42.700574, -8.749873, 270.219],
+												[42.700361, -8.750055, 275.034],
+												[42.700575, -8.749869, 270.234],
+												[42.70098, -8.750192, 266.94],
+												[42.701246, -8.749934, 261.155],
+												[42.702109, -8.750227, 252.991],
+												[42.703319, -8.749273, 249.681],
+												[42.703619, -8.748805, 249.619],
+												[42.703145, -8.748255, 247.608],
+												[42.702809, -8.747558, 246.217],
+												[42.702168, -8.745453, 245.796],
+												[42.701471, -8.743959, 233.232],
+												[42.700144, -8.743438, 217.429],
+												[42.700407, -8.743265, 216.914],
+												[42.701281, -8.742025, 194.834],
+												[42.701724, -8.740421, 188.06],
+												[42.70158, -8.740168, 184.265],
+												[42.701278, -8.740178, 176.094],
+												[42.701118, -8.740724, 162.657],
+												[42.700799, -8.740809, 152.922],
+												[42.700652, -8.740178, 138.008],
+												[42.700347, -8.739768, 138.537],
+												[42.700417, -8.739552, 139.016],
+												[42.70117, -8.738564, 154.442],
+												[42.701517, -8.738322, 157.369],
+												[42.702329, -8.73819, 162.144],
+												[42.703362, -8.738416, 165.064],
+												[42.703549, -8.738227, 165.48],
+												[42.703731, -8.737443, 167.455],
+												[42.70453, -8.736468, 159.246],
+												[42.703962, -8.735823, 145.788],
+												[42.703915, -8.73557, 142.416],
+												[42.704396, -8.735217, 140.008],
+												[42.705048, -8.735307, 142.472],
+												[42.705257, -8.735163, 143.381],
+												[42.705878, -8.734164, 153.477],
+												[42.706428, -8.733777, 159.214],
+												[42.706911, -8.733824, 162.149],
+												[42.707809, -8.734495, 172.299],
+												[42.708395, -8.734739, 173.185],
+												[42.708896, -8.734452, 164.51],
+												[42.709531, -8.734575, 155.344],
+												[42.710117, -8.734329, 148.605],
+												[42.710712, -8.733858, 150.515],
+												[42.710972, -8.734286, 144.308],
+												[42.711232, -8.734131, 138.042],
+												[42.71112, -8.733222, 127.071],
+												[42.710943, -8.732968, 123.667],
+												[42.710602, -8.732847, 119.854],
+												[42.709844, -8.731722, 109.749],
+												[42.709411, -8.730479, 95.759],
+												[42.709418, -8.730222, 92.445],
+												[42.709943, -8.729728, 80.41],
+												[42.709863, -8.729344, 73.267],
+												[42.709442, -8.728837, 65.981],
+												[42.709909, -8.728437, 58.319],
+												[42.709873, -8.72795, 57.808],
+												[42.709287, -8.727986, 57.884],
+												[42.708905, -8.72723, 54.913],
+												[42.708272, -8.72689, 57.889],
+												[42.708836, -8.725733, 47.726],
+												[42.709905, -8.725451, 39.041],
+												[42.71061, -8.72559, 33.321],
+												[42.710949, -8.725204, 32.347],
+												[42.711301, -8.724412, 25.652],
+												[42.711551, -8.724253, 23.668],
+												[42.71254, -8.724285, 21.742],
+												[42.712832, -8.723792, 21.726],
+												[42.712734, -8.723954, 21.208],
+												[42.711993, -8.723746, 21.244]
+											]
+										});
+										GV_Draw_Track(t);
+
+										t = 1;
+										GV_Add_Track_to_Tracklist({
+											bullet: '****',
+											name: trk[t].info.name,
+											desc: trk[t].info.desc,
+											color: trk[t].info.color,
+											number: t
+										});
+
+										GV_Draw_Marker({
+											lat: 42.7100830,
+											lon: -8.7152460,
+											alt: 3.6,
+											name: 'Brañas de Laiño',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7220100,
+											lon: -8.7163570,
+											alt: 41.9,
+											name: 'Fuente',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7246020,
+											lon: -8.7147910,
+											alt: 49.8,
+											name: 'Iglesia San Xian de Laiño',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7291000,
+											lon: -8.7179940,
+											alt: 85.5,
+											name: 'Inicio Roteiro Literario Pensa Nao',
+											desc: '',
+											color: 'blue',
+											icon: ''
+
+										});
+
+
+
+										GV_Draw_Marker({
+											lat: 42.7299740,
+											lon: -8.7176710,
+											alt: 90,
+											name: 'Fuente',
+											desc: '',
+											color: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7300400,
+											lon: -8.7179170,
+											alt: 76,
+											name: 'Casa de Camoiras',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7299540,
+											lon: -8.7179500,
+											alt: 74.7,
+											name: 'Cruceiro',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7312960,
+											lon: -8.7195160,
+											alt: 74.2,
+											name: 'Lavadero',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+
+
+										GV_Draw_Marker({
+											lat: 42.7248860,
+											lon: -8.7261940,
+											alt: 220.5,
+											name: 'Outeiro de Paredes',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7254730,
+											lon: -8.7320120,
+											alt: 269.7,
+											name: 'Petroglifo Da Devesa dos Mouchos',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+
+										GV_Draw_Marker({
+											lat: 42.7220260,
+											lon: -8.7303010,
+											alt: 201.7,
+											name: 'Corredoira',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7194890,
+											lon: -8.7402940,
+											alt: 182.8,
+											name: 'A Cruz de Avelán',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7192900,
+											lon: -8.7405970,
+											alt: 182.4,
+											name: 'Area recreativa',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+
+										GV_Draw_Marker({
+											lat: 42.7003910,
+											lon: -8.7500050,
+											alt: 275,
+											name: 'Castro de Bexo ou Das Murallas',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7001260,
+											lon: -8.7434450,
+											alt: 217.1,
+											name: 'Mirador de Bexo',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+
+										GV_Draw_Marker({
+											lat: 42.7106940,
+											lon: -8.7338650,
+											alt: 150.3,
+											name: 'Petróglifos de Bouza Badín',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+
+										GV_Draw_Marker({
+											lat: 42.7128350,
+											lon: -8.7236150,
+											alt: 13.6,
+											name: 'Hórreos da Lavandeira, Imo',
+											desc: '',
+											color: '',
+											icon: ''
+										});
+										GV_Draw_Marker({
+											lat: 42.7127780,
+											lon: -8.7238830,
+											alt: 13.2,
+											name: 'Fin Roteiro Literario Pensa Nao',
+											desc: '',
+											color: 'Green',
+											icon: 'favicon-32x32.png',
+											size: [32, 32]
+										});
+
+										GV_Finish_Map();
+
+									}
+									GV_Map(); // execute the above code
+									// https://www.gpsvisualizer.com/map_input?form=leaflet
+
+								</script>
+
+								<!-- ******************* acaba mapa ******************* -->
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- INICIO footer -->
+	<footer class="footer-light">
+		<div class="copyright">
+			<img src="imaxes/logos.jpg" id="logos-xunta">
+			<div class="social-icons">
+				<p>Concello de Dodro</p>
+				<ul class="social-icons social-icons-circle">
+					<li><a href="www.dodro.gal" data-original-title="Web" class="web" target="_blank"></a></li>
+					<li><a href="https://www.facebook.com/concellodedodro/?locale=es_ES" data-original-title="facebook" class="facebook" target="_blank"></a></li>
+					<li><a href="https://www.youtube.com/@concellodedodro1920" data-original-title="Youtube" class="youtube" target="_blank"></a></li>
+					<li><a href="https://www.instagram.com/concello_de_dodro/?hl=es" data-original-title="Instagram" class="instagram" target="_blank"></a></li>
+				</ul>
+			</div>
+			<div class="social-icons">
+				<p>Concello de Padrón</p>
+				<ul class="social-icons social-icons-circle">
+					<li><a href="http://padron.gal" data-original-title="Web" class="web" target="_blank"></a></li>
+					<li><a href="https://www.facebook.com/dodrodeportes/?locale=es_ES" data-original-title="facebook" class="facebook" target="_blank"></a></li>
+					<li><a href="https://www.youtube.com/@concellodepadronoficial" data-original-title="Youtube" class="youtube" target="_blank"></a></li>
+					<li><a href="https://www.instagram.com/concellodepadron/" data-original-title="Instagram" class="instagram" target="_blank"></a></li>
+				</ul>
+			</div>
+			<div class="social-icons">
+				<p>Concello de Rois</p>
+				<ul class="social-icons social-icons-circle">
+					<li><a href="https://www.rois.gal" data-original-title="Web" class="web" target="_blank"></a></li>
+					<li><a href="https://www.facebook.com/ConcelloDeRois/?locale=es_LA" data-original-title="facebook" class="facebook" target="_blank"></a></li>
+					<li><a href="https://www.youtube.com/c/ConcellodeRois1" data-original-title="Youtube" class="youtube" target="_blank"></a></li>
+					<li><a href="https://www.instagram.com/concellorois/" data-original-title="Instagram" class="instagram" target="_blank"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="copyright">
+			<a class="foot-link" target="_blank" href="#">O proxecto</a>
+			<a class="foot-link" href="sitemap.html">Mapa Web</a>
+			<a class="foot-link" href="cookies.html">Política de Cookies</a>
+			<a class="foot-link" href="termos_uso.html">Termos de uso / Aviso Legal</a>
+		</div>
+	</footer>
+	<!-- FIN footer -->
+
+	<!-- Load javascripts at bottom, this will reduce page load time -->
+	<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+	<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.min.js"></script>
+    <![endif]-->
+	<script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script src="to_top.js" type="text/javascript"></script>
+
+	<!-- END CORE PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
+	<script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+
+	<script src="assets/corporate/scripts/layout.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			Layout.init();
+			Layout.initTwitter();
+		});
+
+	</script>
+	<!-- END PAGE LEVEL JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+
+</html>
