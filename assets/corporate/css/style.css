@@ -580,7 +580,7 @@ body.page-header-fixed {
 /* Navigation */
 .header-navigation {
 	font: 1em "Open Sans", sans-serif;
-	margin: 0 10px 0 0;
+	margin: 0 0px 0 0;
 	padding: 0;
 	float: left;
 	text-transform: uppercase;
@@ -1345,7 +1345,7 @@ steps block and steps block elements
 
 .breadcrumb > li + li:before {
 	content: "\f105 ";
-	-moz-osx-font-smoothing: grayscale;
+	/*	-moz-osx-font-smoothing: grayscale;*/
 	display: inline-block;
 	font-family: FontAwesome;
 	font-style: normal;
@@ -1366,7 +1366,7 @@ steps block and steps block elements
 	background: #fff;
 }
 
-.breadcrumb > .active {
+.breadcrumb .active {
 	color: #e6400c;
 }
 
@@ -2939,7 +2939,7 @@ Demo Utils
 }
 
 .faq-tabbable li.active:after {
-	content: '';
+
 	display: inline-block;
 	border-bottom: 6px solid transparent;
 	border-top: 6px solid transparent;
@@ -3008,7 +3008,10 @@ Demo Utils
 	margin-right: 17px;
 }
 
-.blog-sidebar {}
+.blog-sidebar {
+	height: 100vh;
+	border-left: 1px solid #ccc;
+}
 
 .blog-posts .more,
 .blog-sidebar .more {

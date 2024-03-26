@@ -18,8 +18,23 @@
  }
 
  /* tamaños */
+ .mini {
+ 	font-size: .4em;
+ 	color: green;
+ 	filter: opacity(.5);
+ 	transform: translateY(-50%);
+ }
+
  .small {
  	font-size: .8em;
+ }
+
+ .medium a {
+ 	font-size: .7em;
+ 	width: auto;
+ 	margin-left: 3%;
+ 	/* 	border: 1px solid blue;
+ 	*/
  }
 
  i.small {
@@ -33,6 +48,11 @@
  	margin: 0 0 .2em 1em;
  	width: 80%;
  	font-style: italic;
+ }
+
+ /* todas las animaciones pausadas */
+ .paused * {
+ 	animation-play-state: paused;
  }
 
  /* imaxes */
@@ -60,21 +80,18 @@
  	filter: drop-shadow(3px 3px 3px #7C858E80);
  }
 
- .img-zoom {
- 	z-index: 999999 !important;
-
- }
+ .img-zoom {}
 
  .img-zoom:hover {
 
- 	transform: scale(1.5);
- 	-ms-transform: scale(1.5);
+ 	transform: scale(2);
+ 	-ms-transform: scale(2);
  	/* IE 9 */
- 	-moz-transform: scale(1.5);
+ 	-moz-transform: scale(2);
  	/* Firefox */
- 	-webkit-transform: scale(1.5);
+ 	-webkit-transform: scale(2);
  	/* Safari and Chrome */
- 	-o-transform: scale(1.5);
+ 	-o-transform: scale(2);
  	/* Opera */
  	padding: 1em;
  	z-index: 999999 !important;
@@ -83,10 +100,22 @@
  /* LOGO */
  .site-logo-2 > img {
  	float: left;
- 	width: 8em;
+ 	width: 7em;
  	margin-right: 0;
  	padding-top: 22px;
  	padding-bottom: 22px;
+ }
+
+ /* header */
+
+
+ .header-navigation {
+ 	font: 1.1em "Open Sans", sans-serif;
+ 	margin: 0 0 0 0;
+ 	padding: 0;
+ 	float: left;
+ 	text-transform: capitalize;
+ 	/* 	clear: both;*/
  }
 
  #header-mapa-concello {
@@ -108,66 +137,70 @@
 
  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');*/
 
- .img-inside_dodro {
- 	position: absolute;
- 	top: 0%;
- 	left: 17%;
- 	/* 	transform: translate(-50%, -50%);*/
+ .img-inside {
+
+ 	width: 80vw;
  	text-transform: uppercase;
- 	font-size: 6rem;
- 	font-family: 'Arial Black';
- 	letter-spacing: 10px;
- 	font-size: 8rem;
+ 	font-size: 3vw;
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-weight: bolder;
+ 	letter-spacing: auto;
+ 	text-align: center;
+ 	color: transparent;
  	background: url("../../../imaxes/img_dodro/RUTA_RANCA_VELA_11.jpg");
  	background-size: contain;
  	background-clip: text;
- 	color: transparent;
+ 	-webkit-background-clip: text;
  	text-fill-color: transparent;
  	-webkit-text-fill-color: transparent;
- 	-webkit-background-clip: text;
- 	background-clip: text;
  	margin: 0 auto;
+ 	display: inline-flex;
+ 	/* 	border: 1px solid blue;*/
  }
 
  .img-inside_rois {
  	position: absolute;
  	top: 0%;
- 	left: 17%;
- 	width: 25vw;
+ 	left: 5%;
+ 	width: 15vw;
  	/* 	transform: translate(-50%, -50%);*/
  	text-transform: uppercase;
- 	font-size: 4em;
- 	font-family: 'Arial Black';
- 	letter-spacing: 10px;
+ 	font-size: 2vw;
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-weight: bolder;
+ 	letter-spacing: auto;
+ 	text-align: center;
+ 	color: transparent;
  	background: url("../../../imaxes/img_rois/rio.jpg");
  	background-size: contain;
  	background-clip: text;
- 	color: transparent;
+ 	-webkit-background-clip: text;
+
  	text-fill-color: transparent;
  	-webkit-text-fill-color: transparent;
- 	-webkit-background-clip: text;
- 	background-clip: text;
- 	margin: 0 auto;
+ 	/* 	border: 1px solid blue;*/
+
  }
 
  .img-inside_padron {
  	position: absolute;
- 	top: 0%;
- 	left: 17%;
+ 	top: 10%;
+ 	left: 15%;
+ 	width: 25vw;
  	/* 	transform: translate(-50%, -50%);*/
  	text-transform: uppercase;
- 	font-size: 6rem;
- 	font-family: 'Arial Black';
- 	letter-spacing: 10px;
- 	font-size: 8rem;
+ 	font-size: 5vw;
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-weight: bolder;
+ 	letter-spacing: auto;
+ 	text-align: center;
+ 	color: transparent;
  	background: url("../../../imaxes/img_padron/xardin2.jpg");
  	background-size: contain;
  	background-clip: text;
- 	color: transparent;
+ 	-webkit-background-clip: text;
  	text-fill-color: transparent;
  	-webkit-text-fill-color: transparent;
- 	-webkit-background-clip: text;
- 	background-clip: text;
  	margin: 0 auto;
  }
 
@@ -187,11 +220,13 @@
 
  [data-title] {
  	position: relative;
+ 	font-family: 'Open Sans', sans-serif;
+
  }
 
  data-title]:after {
  	text-transform: none;
- 	font-size: 1em;
+ 	font-size: .7em;
  }
 
  [data-title]:hover:after {
@@ -205,7 +240,7 @@
  	background: #ccc;
  	color: #3e4d5c;
  	font-weight: 500;
- 	font-size: .8em;
+ 	font-size: .5em;
  	/* 	white-space: nowrap;*/
  	box-shadow: 1px 1px 3px #7C858E;
  	border: 1px solid #ccc;
@@ -217,7 +252,7 @@
  	right: auto;
  	padding: .2em;
  	text-align: center;
- 	width: 15em;
+ 	width: auto;
  	/*	text-transform: lowercase;*/
  }
 
@@ -260,7 +295,6 @@
  }
 
  /* carrusel index */
- /* number of images*/
  .carrusel {
  	/*
 		justify-content: center;
@@ -268,7 +302,7 @@
 */
  	/*		flex: 2;*/
  	/*		align-items: center;*/
- 	--d: 12s;
+ 	--d: 20s;
  	/* duration */
  	display: grid;
  	overflow: hidden;
@@ -279,8 +313,8 @@
  	float: right;
  	position: relative;
  	left: 7%;
- 	-webkit-mask: linear-gradient(90deg, #0000, #ccc 10% 90%, #0000);
- 	mask: linear-gradient(90deg, #0000, #ccc 10% 90%, #0000);
+ 	/* 	-webkit-mask: linear-gradient(90deg, #0000, #ccc 10% 90%, #0000);*/
+ 	mask: linear-gradient(90deg, #0000, #ccc 5% 90%, #0000);
  }
 
  .carrusel > img {
@@ -352,7 +386,7 @@
  }
 
  #obradoiros-anteriores > div {
- 	width: 30%;
+ 	width: 15vw;
  	margin: 0px 1em 0px 1em;
  	padding: .2em;
  	box-shadow: 0px 2px 5px 2px #3f5862;
@@ -376,7 +410,7 @@
 
  #obradoiros-anteriores span {
  	display: block;
- 	font-size: 1.2em;
+ 	font-size: 100%;
  	font-weight: 800;
  	color: #3f5862;
  	padding: inherit;
@@ -606,7 +640,7 @@
  }
 
  .active:after {
- 	content: "\2212";
+ 	/* 	content: "\2212";*/
  }
 
  .panel {
@@ -617,7 +651,6 @@
 
  	overflow: hidden;
  	transition: max-height 0.2s ease-out;
- 	border: 1px solid blue;
  }
 
  .panel img {
